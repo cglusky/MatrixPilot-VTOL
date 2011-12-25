@@ -1,25 +1,25 @@
-Microchip Technology Inc, vv3_30 (B) >
+Microchip Technology Inc, vv3_30 (B) :
 
 Tool Name:
-  c:\program files\microchip\mplabc30\v3.30\bin\bin\..\bin/pic30-coff-ld.exe
+  c:\program files (x86)\microchip\mplabc30\v3.30c\bin\bin\..\bin/pic30-coff-ld.exe
 
 Command:
   -p30F4011 \
   -oMatrixPilot.cof \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/.. \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/PIC24E \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/PIC24E/gld \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/PIC24F \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/PIC24F/gld \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/PIC24H \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/PIC24H/gld \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/dsPIC30F \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/dsPIC30F/gld \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/dsPIC33E \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/dsPIC33E/gld \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/dsPIC33F \
-  -Lc:/program files/microchip/mplabc30/v3.30/bin/bin/../../support/dsPIC33F/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/.. \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/PIC24E \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/PIC24F \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/PIC24H \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/dsPIC30F \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/dsPIC33E \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/dsPIC33F \
+  -Lc:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../support/dsPIC33F/gld \
   build\udb\config_tests.o \
   build\udb\background.o \
   build\udb\behavior.o \
@@ -55,8 +55,8 @@ Command:
   build\udb\traps_udb_asm.o \
   build\udb\gpsParseMTEK.o \
   build\udb\altitudeCntrl.o \
-  C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a \
-  -LC:\Program Files\Microchip\MPLAB C30\lib \
+  C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a \
+  -LC:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib \
   -Tp30F4011.gld.00 \
   --defsym=__MPLAB_BUILD=1 \
   -Map=MatrixPilot.map \
@@ -69,118 +69,118 @@ Command:
 
 Archive member included because of file (symbol)
 
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vdot.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vdot.obj)
                               build\udb\rmat.o (VectorDotProduct)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vadd.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vadd.obj)
                               build\udb\rmat.o (VectorAdd)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vmul.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vmul.obj)
                               build\udb\rmat.o (VectorMultiply)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(mmul.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(mmul.obj)
                               build\udb\rmat.o (MatrixMultiply)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(madd.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(madd.obj)
                               build\udb\rmat.o (MatrixAdd)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vscl.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vscl.obj)
                               build\udb\rmat.o (VectorScale)
-C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vpow.obj)
+C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vpow.obj)
                               build\udb\rmat.o (VectorPower)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
                               (_resetPRI)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o) (_data_init_standard)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divsi3.o)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o) (_data_init_standard)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divsi3.o)
                               build\udb\navigate.o (__divsi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsisf.o)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsisf.o)
                               build\udb\yawCntrl.o (__floatsisf)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsf3.o)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsf3.o)
                               build\udb\yawCntrl.o (__mulsf3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
                               build\udb\yawCntrl.o (__fixsfsi)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(udivsi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divsi3.o) (__udivsi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fpack.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsisf.o) (_fpack)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack2.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsf3.o) (_funpack2)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(futil.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsf3.o) (_fPropagateNaN)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixsfsi.o) (_funpack)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(udivsi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divsi3.o) (__udivsi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fpack.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsisf.o) (_fpack)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack2.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsf3.o) (_funpack2)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(futil.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsf3.o) (_fPropagateNaN)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixsfsi.o) (_funpack)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
                               build\udb\telemetry.o (vsnprintf)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
                               build\udb\gpsParseCommon.o (strlen)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo) (memcpy)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo) (_Printf)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Vacopy)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (strchr)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Putfld)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Puttxt)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (_Ldtob)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (_Litob)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (memchr)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_LDunscale)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_LDscale)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (ldiv)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_Genld)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo) (_Dnorm)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo) (div)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (__extendsfdf2)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(deqltle.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__ltdf2)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__fixdfsi)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsidf.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__floatsidf)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(subdf3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__subdf3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dgtge.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__gtdf2)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldf3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__muldf3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divdf3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__divdf3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umodsi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__umodsi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__mulsi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__udivdi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__muldi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dcompare.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(deqltle.o) (_dcompare)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixdfsi.o) (_dunpack)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack2.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldf3.o) (_dunpack2)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatdidf.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsidf.o) (__floatdidf)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(adddf3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(subdf3.o) (__adddf3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpack.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldf3.o) (_dpack)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umuldi3.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldi3.o) (__umuldi3)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dtype.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dcompare.o) (_dtype)
-c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
-                              c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack2.o) (_dPropagateNaN)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo) (memcpy)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo) (_Printf)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Vacopy)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (strchr)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Putfld)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo) (_Puttxt)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (_Ldtob)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (_Litob)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (memchr)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_LDunscale)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_LDscale)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (ldiv)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (_Genld)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo) (_Dnorm)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo) (div)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo) (__extendsfdf2)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(deqltle.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__ltdf2)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__fixdfsi)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsidf.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__floatsidf)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(subdf3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__subdf3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dgtge.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__gtdf2)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldf3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__muldf3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divdf3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo) (__divdf3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umodsi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__umodsi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__mulsi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__udivdi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo) (__muldi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dcompare.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(deqltle.o) (_dcompare)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixdfsi.o) (_dunpack)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack2.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldf3.o) (_dunpack2)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatdidf.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsidf.o) (__floatdidf)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(adddf3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(subdf3.o) (__adddf3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpack.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldf3.o) (_dpack)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umuldi3.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldi3.o) (__umuldi3)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dtype.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dcompare.o) (_dtype)
+c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
+                              c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack2.o) (_dPropagateNaN)
 
 
 Selected CodeGuard Options:
@@ -233,13 +233,13 @@ section                    address      alignment gaps    total length  (dec)
 .nbss                        0xb10                   0             0xa  (10)
 .ndata                       0xb1a                   0            0x24  (36)
 .nbss                        0xb3e                   0             0xe  (14)
-_01fc81504ec089df            0xb4c                   0             0x4  (4)
+_0361a1504ef78837            0xb4c                   0             0x4  (4)
 .ndata                       0xb50                   0             0x4  (4)
 .nbss                        0xb54                   0             0x4  (4)
 .ndata                       0xb58                   0             0x2  (2)
 .nbss                        0xb5a                   0             0x2  (2)
-_01fc80704ec089df            0xb5c                   0             0x2  (2)
-_01fc81c04ec089df            0xb5e                   0             0x2  (2)
+_0361a0704ef78837            0xb5c                   0             0x2  (2)
+_0361a1c04ef78837            0xb5e                   0             0x2  (2)
 .nbss                        0xb60                   0             0x2  (2)
 .ndata                       0xb62                   0             0x4  (4)
 .nbss                        0xb66                   0             0x2  (2)
@@ -1207,8 +1207,8 @@ LOAD build\udb\mp_osd.o
 LOAD build\udb\traps_udb_asm.o
 LOAD build\udb\gpsParseMTEK.o
 LOAD build\udb\altitudeCntrl.o
-LOAD C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a
-LOAD c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/dsPIC30F\libp30F4011-coff.a
+LOAD C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a
+LOAD c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib/dsPIC30F\libp30F4011-coff.a
                     0x8005c0                  __FUID0 = 0x8005c0
                     0x8005c2                  __FUID1 = 0x8005c2
                     0x8005c4                  __FUID2 = 0x8005c4
@@ -1237,140 +1237,140 @@ LOAD c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib/dsPIC30F\libp30
 
 .text             0x000100       0x1e28
  *(.init)
- .init            0x000100         0x32 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+ .init            0x000100         0x32 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
                   0x000100                  _resetPRI
                   0x000100                  _reset
                   0x000122                  _psv_init
- .init            0x000132         0x5e c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+ .init            0x000132         0x5e c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
                   0x000132                  _data_init_standard
                   0x000132                  _data_init
  *(.user_init)
  *(.handle)
  *(.isr*)
  *(.libc)
- .libc            0x0001e4         0x44 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
+ .libc            0x0001e4         0x44 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
                   0x0001e4                  vsnprint.XXo:_prout
                   0x000204                  vsnprintf
- .libc            0x000228          0xe c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
+ .libc            0x000228          0xe c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
                   0x000228                  strlen
- .libc            0x000236          0xe c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
+ .libc            0x000236          0xe c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
                   0x000236                  memcpy
- .libc            0x000244        0x172 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
+ .libc            0x000244        0x172 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
                   0x000244                  _Printf
- .libc            0x0003b6          0xa c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
+ .libc            0x0003b6          0xa c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
                   0x0003b6                  _Vacopy
- .libc            0x0003c0         0x12 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
+ .libc            0x0003c0         0x12 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
                   0x0003c0                  strchr
- .libc            0x0003d2        0x2fa c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
+ .libc            0x0003d2        0x2fa c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
                   0x0003d2                  _Putfld
- .libc            0x0006cc        0x194 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
+ .libc            0x0006cc        0x194 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
                   0x0006cc                  _Puttxt
- .libc            0x000860        0x446 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
+ .libc            0x000860        0x446 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
                   0x000860                  _Ldtob
- .libc            0x000ca6        0x312 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
+ .libc            0x000ca6        0x312 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
                   0x000ca6                  _Litob
- .libc            0x000fb8         0x14 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
+ .libc            0x000fb8         0x14 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
                   0x000fb8                  memchr
- .libc            0x000fcc         0x58 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
+ .libc            0x000fcc         0x58 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
                   0x000fcc                  _LDunscale
- .libc            0x001024         0xf6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
+ .libc            0x001024         0xf6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
                   0x001024                  _LDscale
- .libc            0x00111a         0x3a c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
+ .libc            0x00111a         0x3a c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
                   0x00111a                  ldiv
- .libc            0x001154        0x268 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
+ .libc            0x001154        0x268 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
                   0x001154                  _Genld
- .libc            0x0013bc         0x98 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
+ .libc            0x0013bc         0x98 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
                   0x0013bc                  _Dnorm
- .libc            0x001454         0x16 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
+ .libc            0x001454         0x16 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
                   0x001454                  div
- .libc            0x00146a          0xc c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsi3.o)
+ .libc            0x00146a          0xc c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsi3.o)
                   0x00146a                  __mulp32peds3
                   0x00146a                  __mulsi3
                   0x00146a                  __mulp32eds3
  *(.libm)
- .libm            0x001476         0x1e c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divsi3.o)
+ .libm            0x001476         0x1e c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divsi3.o)
                   0x001476                  __divsi3
- .libm            0x001494         0x56 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsisf.o)
+ .libm            0x001494         0x56 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsisf.o)
                   0x001494                  __floatsisf
- .libm            0x0014ea         0x68 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsf3.o)
+ .libm            0x0014ea         0x68 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsf3.o)
                   0x0014ea                  __mulsf3
- .libm            0x001552         0x42 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
+ .libm            0x001552         0x42 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
                   0x001552                  __fixsfsi
- .libm            0x001594         0x20 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(udivsi3.o)
+ .libm            0x001594         0x20 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(udivsi3.o)
                   0x001594                  __udivsi3
- .libm            0x0015b4         0x4c c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fpack.o)
+ .libm            0x0015b4         0x4c c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fpack.o)
                   0x0015b4                  _fpack
- .libm            0x001600         0x10 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack2.o)
+ .libm            0x001600         0x10 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack2.o)
                   0x001600                  _funpack2
- .libm            0x001610         0x20 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(futil.o)
+ .libm            0x001610         0x20 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(futil.o)
                   0x001610                  _fPropagateNaN
                   0x001622                  _fbopExit
                   0x00162a                  _fbopReturnNaN
- .libm            0x001630         0x2a c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack.o)
+ .libm            0x001630         0x2a c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack.o)
                   0x001630                  _funpack
- .libm            0x00165a         0x3e c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
+ .libm            0x00165a         0x3e c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
                   0x00165a                  __extendsfdf2
- .libm            0x001698          0xa c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(deqltle.o)
+ .libm            0x001698          0xa c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(deqltle.o)
                   0x001698                  __eqdf2
                   0x001698                  __ltdf2
                   0x001698                  __ledf2
- .libm            0x0016a2         0x58 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
+ .libm            0x0016a2         0x58 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
                   0x0016a2                  __fixdfsi
- .libm            0x0016fa          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsidf.o)
+ .libm            0x0016fa          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsidf.o)
                   0x0016fa                  __floatsidf
- .libm            0x001700          0x4 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(subdf3.o)
+ .libm            0x001700          0x4 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(subdf3.o)
                   0x001700                  __subdf3
- .libm            0x001704          0xa c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dgtge.o)
+ .libm            0x001704          0xa c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dgtge.o)
                   0x001704                  __gtdf2
                   0x001704                  __gedf2
- .libm            0x00170e         0xea c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldf3.o)
+ .libm            0x00170e         0xea c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldf3.o)
                   0x00170e                  __muldf3
- .libm            0x0017f8         0xb4 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divdf3.o)
+ .libm            0x0017f8         0xb4 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divdf3.o)
                   0x0017f8                  __divdf3
- .libm            0x0018ac          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umodsi3.o)
+ .libm            0x0018ac          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umodsi3.o)
                   0x0018ac                  __umodsi3
- .libm            0x0018b2        0x216 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
+ .libm            0x0018b2        0x216 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
                   0x0018d8                  __udivmoddi3
                   0x0019a6                  __udivdi3
                   0x0019b4                  __umoddi3
                   0x0019bc                  __divdi3
                   0x0019f6                  __moddi3
- .libm            0x001ac8         0x5c c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldi3.o)
+ .libm            0x001ac8         0x5c c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldi3.o)
                   0x001ac8                  __muldi3
- .libm            0x001b24         0x52 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dcompare.o)
+ .libm            0x001b24         0x52 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dcompare.o)
                   0x001b24                  _dcompare
- .libm            0x001b76         0x4e c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack.o)
+ .libm            0x001b76         0x4e c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack.o)
                   0x001b76                  _dunpack
- .libm            0x001bc4         0x32 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack2.o)
+ .libm            0x001bc4         0x32 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack2.o)
                   0x001bc4                  _dunpack2
                   0x001be6                  _dreturnNaN
                   0x001bec                  _dunpack2exit
- .libm            0x001bf6         0x6e c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatdidf.o)
+ .libm            0x001bf6         0x6e c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatdidf.o)
                   0x001bf6                  __floatdidf
- .libm            0x001c64         0xfa c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(adddf3.o)
+ .libm            0x001c64         0xfa c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(adddf3.o)
                   0x001c64                  __adddf3
- .libm            0x001d5e         0x58 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpack.o)
+ .libm            0x001d5e         0x58 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpack.o)
                   0x001d5e                  _dpack
- .libm            0x001db6         0x44 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umuldi3.o)
+ .libm            0x001db6         0x44 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umuldi3.o)
                   0x001db6                  __umuldi3
- .libm            0x001dfa         0x24 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dtype.o)
+ .libm            0x001dfa         0x24 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dtype.o)
                   0x001dfa                  _dtype
- .libm            0x001e1e         0x1c c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
+ .libm            0x001e1e         0x1c c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
                   0x001e1e                  _dPropagateNaN
  *(.libdsp)
- .libdsp          0x001e3a         0x1a C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vdot.obj)
+ .libdsp          0x001e3a         0x1a C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vdot.obj)
                   0x001e3a                  VectorDotProduct
- .libdsp          0x001e54         0x1e C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vadd.obj)
+ .libdsp          0x001e54         0x1e C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vadd.obj)
                   0x001e54                  VectorAdd
- .libdsp          0x001e72         0x1c C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vmul.obj)
+ .libdsp          0x001e72         0x1c C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vmul.obj)
                   0x001e72                  VectorMultiply
- .libdsp          0x001e8e         0x46 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(mmul.obj)
+ .libdsp          0x001e8e         0x46 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(mmul.obj)
                   0x001e8e                  MatrixMultiply
- .libdsp          0x001ed4         0x20 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(madd.obj)
+ .libdsp          0x001ed4         0x20 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(madd.obj)
                   0x001ed4                  MatrixAdd
- .libdsp          0x001ef4         0x1c C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vscl.obj)
+ .libdsp          0x001ef4         0x1c C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vscl.obj)
                   0x001ef4                  VectorScale
- .libdsp          0x001f10         0x18 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vpow.obj)
+ .libdsp          0x001f10         0x18 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vpow.obj)
                   0x001f10                  VectorPower
  *(.lib*)
 
@@ -2287,9 +2287,9 @@ userdata
                     0x0216                  _UART2 = 0x216
                     0x0001                  __MPLAB_BUILD = 0x1
 START GROUP
-LOAD c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a
-LOAD c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a
-LOAD c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a
+LOAD c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a
+LOAD c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a
+LOAD c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a
 END GROUP
 OUTPUT(MatrixPilot.cof coff-pic30)
 LOAD FGS
@@ -2367,117 +2367,117 @@ __c30_signature
  __c30_signature
                   0x0000c6          0x6 build\udb\altitudeCntrl.o
  __c30_signature
-                  0x0000cc          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vdot.obj)
+                  0x0000cc          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vdot.obj)
  __c30_signature
-                  0x0000d2          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vadd.obj)
+                  0x0000d2          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vadd.obj)
  __c30_signature
-                  0x0000d8          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vmul.obj)
+                  0x0000d8          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vmul.obj)
  __c30_signature
-                  0x0000de          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(mmul.obj)
+                  0x0000de          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(mmul.obj)
  __c30_signature
-                  0x0000e4          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(madd.obj)
+                  0x0000e4          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(madd.obj)
  __c30_signature
-                  0x0000ea          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vscl.obj)
+                  0x0000ea          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vscl.obj)
  __c30_signature
-                  0x0000f0          0x6 C:\Program Files\Microchip\MPLAB C30\lib\libdsp-coff.a(vpow.obj)
+                  0x0000f0          0x6 C:\Program Files (x86)\Microchip\mplabc30\v3.30c\lib\libdsp-coff.a(vpow.obj)
  __c30_signature
-                  0x0000f6          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+                  0x0000f6          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
  __c30_signature
-                  0x0000fc          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+                  0x0000fc          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
  __c30_signature
-                  0x000102          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divsi3.o)
+                  0x000102          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divsi3.o)
  __c30_signature
-                  0x000108          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsisf.o)
+                  0x000108          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsisf.o)
  __c30_signature
-                  0x00010e          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsf3.o)
+                  0x00010e          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsf3.o)
  __c30_signature
-                  0x000114          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
+                  0x000114          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixsfsi.o)
  __c30_signature
-                  0x00011a          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(udivsi3.o)
+                  0x00011a          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(udivsi3.o)
  __c30_signature
-                  0x000120          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fpack.o)
+                  0x000120          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fpack.o)
  __c30_signature
-                  0x000126          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack2.o)
+                  0x000126          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack2.o)
  __c30_signature
-                  0x00012c          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(futil.o)
+                  0x00012c          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(futil.o)
  __c30_signature
-                  0x000132          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(funpack.o)
+                  0x000132          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(funpack.o)
  __c30_signature
-                  0x000138          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
+                  0x000138          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(vsnprint.XXo)
  __c30_signature
-                  0x00013e          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
+                  0x00013e          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strlen.XXo)
  __c30_signature
-                  0x000144          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
+                  0x000144          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memcpy.XXo)
  __c30_signature
-                  0x00014a          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
+                  0x00014a          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
  __c30_signature
-                  0x000150          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
+                  0x000150          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xvacopy.XXo)
  __c30_signature
-                  0x000156          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
+                  0x000156          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(strchr.XXo)
  __c30_signature
-                  0x00015c          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
+                  0x00015c          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputfld.XXo)
  __c30_signature
-                  0x000162          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
+                  0x000162          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xputtxt.XXo)
  __c30_signature
-                  0x000168          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
+                  0x000168          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
  __c30_signature
-                  0x00016e          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
+                  0x00016e          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
  __c30_signature
-                  0x000174          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
+                  0x000174          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(memchr.XXo)
  __c30_signature
-                  0x00017a          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
+                  0x00017a          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldunsca.XXo)
  __c30_signature
-                  0x000180          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
+                  0x000180          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldscale.XXo)
  __c30_signature
-                  0x000186          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
+                  0x000186          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
  __c30_signature
-                  0x00018c          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
+                  0x00018c          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
  __c30_signature
-                  0x000192          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
+                  0x000192          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xdnorm.XXo)
  __c30_signature
-                  0x000198          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
+                  0x000198          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
  __c30_signature
-                  0x00019e          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
+                  0x00019e          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(extendsfdf.o)
  __c30_signature
-                  0x0001a4          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(deqltle.o)
+                  0x0001a4          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(deqltle.o)
  __c30_signature
-                  0x0001aa          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
+                  0x0001aa          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(fixdfsi.o)
  __c30_signature
-                  0x0001b0          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatsidf.o)
+                  0x0001b0          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatsidf.o)
  __c30_signature
-                  0x0001b6          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(subdf3.o)
+                  0x0001b6          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(subdf3.o)
  __c30_signature
-                  0x0001bc          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dgtge.o)
+                  0x0001bc          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dgtge.o)
  __c30_signature
-                  0x0001c2          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldf3.o)
+                  0x0001c2          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldf3.o)
  __c30_signature
-                  0x0001c8          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divdf3.o)
+                  0x0001c8          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divdf3.o)
  __c30_signature
-                  0x0001ce          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umodsi3.o)
+                  0x0001ce          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umodsi3.o)
  __c30_signature
-                  0x0001d4          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(mulsi3.o)
+                  0x0001d4          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(mulsi3.o)
  __c30_signature
-                  0x0001da          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
+                  0x0001da          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(divmoddi3.o)
  __c30_signature
-                  0x0001e0          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(muldi3.o)
+                  0x0001e0          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(muldi3.o)
  __c30_signature
-                  0x0001e6          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dcompare.o)
+                  0x0001e6          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dcompare.o)
  __c30_signature
-                  0x0001ec          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack.o)
+                  0x0001ec          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack.o)
  __c30_signature
-                  0x0001f2          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dunpack2.o)
+                  0x0001f2          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dunpack2.o)
  __c30_signature
-                  0x0001f8          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(floatdidf.o)
+                  0x0001f8          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(floatdidf.o)
  __c30_signature
-                  0x0001fe          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(adddf3.o)
+                  0x0001fe          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(adddf3.o)
  __c30_signature
-                  0x000204          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpack.o)
+                  0x000204          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpack.o)
  __c30_signature
-                  0x00020a          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(umuldi3.o)
+                  0x00020a          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(umuldi3.o)
  __c30_signature
-                  0x000210          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dtype.o)
+                  0x000210          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dtype.o)
  __c30_signature
-                  0x000216          0x6 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
+                  0x000216          0x6 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\libm-coff.a(dpropagateNaN.o)
 
 .nbss               0x0800        0x104
  .nbss              0x0800        0x104 build\udb\telemetry.o
@@ -2672,9 +2672,9 @@ __c30_signature
                     0x0b48                  flags
                     0x0b4a                  old_rtl_flags
 
-_01fc81504ec089df
+_0361a1504ef78837
                     0x0b4c          0x4
- _01fc81504ec089df
+ _0361a1504ef78837
                     0x0b4c          0x4 build\udb\telemetry.o
                     0x0b4c                  trap_source
 
@@ -2695,15 +2695,15 @@ _01fc81504ec089df
  .nbss              0x0b5a          0x2 build\udb\libUDB.o
                     0x0b5a                  udb_flags
 
-_01fc80704ec089df
+_0361a0704ef78837
                     0x0b5c          0x2
- _01fc80704ec089df
+ _0361a0704ef78837
                     0x0b5c          0x2 build\udb\telemetry.o
                     0x0b5c                  trap_flags
 
-_01fc81c04ec089df
+_0361a1c04ef78837
                     0x0b5e          0x2
- _01fc81c04ec089df
+ _0361a1c04ef78837
                     0x0b5e          0x2 build\udb\telemetry.o
                     0x0b5e                  osc_fail_count
 
@@ -2722,26 +2722,26 @@ _01fc81c04ec089df
                     0x0b66                  desiredHeight
 
 .data               0x0b68         0x48
- .data              0x0b68         0x48 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
+ .data              0x0b68         0x48 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
 
 .dconst             0x0bb0         0x32
- .dconst            0x0bb0         0x32 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
+ .dconst            0x0bb0         0x32 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xldtob.XXo)
 
 .data               0x0be2         0x34
- .data              0x0be2         0x22 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
- .data              0x0c04         0x12 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
+ .data              0x0be2         0x22 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xlitob.XXo)
+ .data              0x0c04         0x12 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
 
 .dconst             0x0c16          0x8
- .dconst            0x0c16          0x8 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
+ .dconst            0x0c16          0x8 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xprintf.XXo)
 
 .data               0x0c1e          0x2
- .data              0x0c1e          0x2 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
+ .data              0x0c1e          0x2 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(ldiv.XXo)
 
 .dconst             0x0c20          0x2
- .dconst            0x0c20          0x2 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
+ .dconst            0x0c20          0x2 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(xgenld.XXo)
 
 .data               0x0c22          0x2
- .data              0x0c22          0x2 c:/program files/microchip/mplabc30/v3.30/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
+ .data              0x0c22          0x2 c:/program files (x86)/microchip/mplabc30/v3.30c/bin/bin/../../lib\liblega-c-coff.a(div.XXo)
 
 .const              0x9f28        0x1de load address 0x001f28  
  .const             0x9f28         0xe0 build\udb\gpsParseSTD.o
