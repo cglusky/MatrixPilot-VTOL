@@ -38,12 +38,14 @@
 // UDB3_BOARD  - Board is red, and includes a single, flat, multi-gyro daugter-board.
 // UDB4_BOARD  - Board is red, has 8 inputs, 8 output and no gyro daughter-board.
 // See the MatrixPilot wiki for more details on different UDB boards.
-// If building for UDB4, use the MatrixPilot-udb4.mcp project file.
+// If building for the UDB4, use the MatrixPilot-udb4.mcw project workspace. 
 #define BOARD_TYPE 							UDB3_BOARD
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Use board orientation to change the mounting direction of the board.
+// Note: For UDB3 and older versions of UDB, Y arrow points to the front, GPS connector is on the front.
+//       For UDB4, X arrow points to the front, GPS connectors are on the front.
 // The following 6 orientations have the board parallel with the ground.
 // ORIENTATION_FORWARDS:  Component-side up,   GPS connector front
 // ORIENTATION_BACKWARDS: Component-side up,   GPS connector back
@@ -66,6 +68,7 @@
 //    AIRFRAME_STANDARD		 	Elevator, and Ailerons and/or Rudder control
 //    AIRFRAME_VTAIL			Ailerons(optional), and Elevator and Rudder as V-tail controls
 //    AIRFRAME_DELTA			Aileron and Elevator as Elevons, and Rudder(optional)
+//	  AIRFRAME_VTOL				Aileron and Elevator as Elevons, and Aileron and Rudder as Rudderon
 // (Note that although AIRFRAME_HELI is also recognized, the code for this airframe type is not ready.)
 #define AIRFRAME_TYPE						AIRFRAME_STANDARD
 
@@ -115,7 +118,7 @@
 // in the altitude controls, and will trim the throttle and pitch to maintain air speed.
 // Define DESIRED_SPEED to be the air speed that you want, in meters/second.
 #define SPEED_CONTROL						0
-#define DESIRED_SPEED						10.00 // meters/second
+#define DESIRED_SPEED						10.0 // meters/second
 
 // Inverted flight
 // Set these to 1 to enable stabilization of inverted flight in stabilized and/or waypoint modes.
@@ -216,6 +219,7 @@
 #define ELEVATOR_OUTPUT_CHANNEL				CHANNEL_2
 #define RUDDER_OUTPUT_CHANNEL				CHANNEL_4
 #define AILERON_SECONDARY_OUTPUT_CHANNEL	CHANNEL_UNUSED
+#define RUDDER_SECONDARY_OUTPUT_CHANNEL		CHANNEL_UNUSED
 #define CAMERA_PITCH_OUTPUT_CHANNEL			CHANNEL_UNUSED
 #define CAMERA_YAW_OUTPUT_CHANNEL			CHANNEL_UNUSED
 #define TRIGGER_OUTPUT_CHANNEL				CHANNEL_UNUSED
@@ -235,12 +239,15 @@
 #define ELEVATOR_CHANNEL_REVERSED			HW_SWITCH_2
 #define RUDDER_CHANNEL_REVERSED				HW_SWITCH_3
 #define AILERON_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
+#define RUDDER_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
 #define THROTTLE_CHANNEL_REVERSED			0 // Set to 1 to hardcode a channel to be reversed
 #define CAMERA_PITCH_CHANNEL_REVERSED		0
 #define CAMERA_YAW_CHANNEL_REVERSED			0
 
 // Set this to 1 if you need to switch the left and right elevon or vtail surfaces
 #define ELEVON_VTAIL_SURFACES_REVERSED		0
+// Set this to 1 if you need to switch the Ruddervon VTOL surfaces
+#define RUDDERVON_VTOL_SURFACES_REVERSED		0
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -251,6 +258,16 @@
 #define MODE_SWITCH_THRESHOLD_LOW			2600
 #define MODE_SWITCH_THRESHOLD_HIGH			3400
 
+// Setting MODE_SWITCH_TWO_POSITION to 1,  allows a two state mode switch on the transmitter to be used
+// to create three flight modes. When switch is "Down" the plane always reverts to Manual. When "Up",
+// the plane moves to Stabilized". If the user is in stabilized ("Up"), and then the user toggles
+// the switch to Down, Up, Down, Up, then the plane moves to autonomous.
+// Each toggle must be achieved with a limited time period ( 1/2 a second ) and not faster than 1/40th of a second.
+// When in Autonomous, a move to "Down" puts the switch state  back to Manual. And a futher move to "Up", will put the
+// switch state back in stabilized. The important design concept is that Manual position is always Manual state immediately.
+// Stabilized position is Stabilized mode unless you try  hard to reach Autonomous mode.
+// Set MODE_SWITCH_TWO_POSITION	to 0 for a normal three position mode switch.	
+#define MODE_SWITCH_TWO_POSITION			0
 
 ////////////////////////////////////////////////////////////////////////////////
 // The Failsafe Channel is the RX channel that is monitored for loss of signal
@@ -296,14 +313,25 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Serial Output Format (Can be SERIAL_NONE, SERIAL_DEBUG, SERIAL_ARDUSTATION, SERIAL_UDB,
-// SERIAL_UDB_EXTRA, SERIAL_CAM_TRACK, or SERIAL_OSD_REMZIBI)
+// SERIAL_UDB_EXTRA,SERIAL_MAVLINK, SERIAL_CAM_TRACK, or SERIAL_OSD_REMZIBI)
 // This determines the format of the output sent out the spare serial port.
 // Note that SERIAL_OSD_REMZIBI only works with a ublox GPS.
 // SERIAL_UDB_EXTRA will add additional telemetry fields to those of SERIAL_UDB.
 // SERIAL_UDB_EXTRA can be used with the OpenLog without characters being dropped.
 // SERIAL_UDB_EXTRA may result in dropped characters if used with the XBEE wireless transmitter.
 // SERIAL_CAM_TRACK is used to output location data to a 2nd UDB, which will target its camera at this plane.
-#define SERIAL_OUTPUT_FORMAT				SERIAL_NONE
+// SERIAL_MAVLINK is a bi-directional binary format for use with QgroundControl, HKGCS or MAVProxu (Ground Control Stations.)
+// Note that SERIAL_MAVLINK defaults to using a baud rate of 57600 baud (other formats default to 19200)
+#define SERIAL_OUTPUT_FORMAT 	SERIAL_NONE
+
+// MAVLink requires an aircraft Identifier (I.D) as it is deaigned to control multiple aircraft
+// Each aircraft in the sky will need a unique I.D. in the range from 0-255
+#define MAVLINK_SYSID	55
+
+// The following SERIAL_INPUT_FORMAT line should only be enabled for MAVLINK when using the UDB4
+// in order for sufficient RAM to be available.
+// Choices are SERIAL_NONE or SERIAL_MAVLINK
+#define SERIAL_INPUT_FORMAT    SERIAL_NONE
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -422,12 +450,14 @@
 // YAWKP_RUDDER is the proportional feedback gain for rudder navigation
 // YAWKD_RUDDER is the yaw gyro feedback gain for the rudder in reponse to yaw rotation
 // ROLLKP_RUDDER is the feedback gain for the rudder in response to the current roll angle
+// ROLLKD_RUDDER is the feedback gain for the rudder in response to the rate of change roll angle
 // MANUAL_AILERON_RUDDER_MIX is the fraction of manual aileron control to mix into the rudder when
 // in stabilized or waypoint mode.  This mainly helps aileron-initiated turning while in stabilized.
 // RUDDER_BOOST is the additional gain multiplier for the manually commanded rudder deflection
 #define YAWKP_RUDDER						0.05
 #define YAWKD_RUDDER						0.05
 #define ROLLKP_RUDDER						0.06
+#define ROLLKD_RUDDER						0.05
 #define MANUAL_AILERON_RUDDER_MIX			0.00
 #define RUDDER_BOOST						1.00
 
@@ -578,3 +608,26 @@
 
 // Set this to 1 to calculate and print out free stack space
 #define RECORD_FREE_STACK_SPACE 			0
+
+
+///////////////////////////////////////////////////////////////////////////////////
+// Vehicle and Pilot Identification
+
+// Once you are flying your plane and swapping flights and telemetry with other's across
+// the world, you may like to fill in some of the fields below. This will be embedded in your
+// telemetry, and used to make more interesting flights in Google Earth.
+// ID_VEHICLE_MODEL_NAME provides indication of what model of plane, quad, car etc you are using
+// ID_VEHICLE_REGISTRATION should be short (less than 12 continuous characters with no space
+// it will be used in Google Earth as the folder name containing your flights.
+// ID_LEAD_PILOT is your lead pilot flight name or alias e.g. "UAV Flight Director"
+// ID_DIY_DRONES_URL should be the URL of your member page on DIY Drones.
+// That will allow Google Earth viewers of your flights to click straight through to your latest discussions.
+// EXAMPLE:-
+//#define ID_VEHICLE_MODEL_NAME "Multiplex Twinstar 2"
+//#define ID_VEHICLE_REGISTRATION "TW2-PDH-UK"
+//#define ID_LEAD_PILOT "Pete Hollands"
+//#define ID_DIY_DRONES_URL "http://www.diydrones.com/profile/PeterHollands"
+#define ID_VEHICLE_MODEL_NAME "Not Defined"
+#define ID_VEHICLE_REGISTRATION "Not Defined"
+#define ID_LEAD_PILOT "Not Defined"
+#define ID_DIY_DRONES_URL "http://www.diydrones.com"

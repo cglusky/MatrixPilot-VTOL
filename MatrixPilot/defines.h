@@ -20,7 +20,7 @@
 
 
 #include "../libDCM/libDCM.h"
-#include "gain_variables.h"
+
 
 
 #define BYTECIR_TO_DEGREE 92160		// (360.0/256 * 2^16)
@@ -61,6 +61,17 @@ extern union fbts_int flags ;
 void init_servoPrepare( void ) ;
 
 
+////////////////////////////////////////////////////////////////////////////////
+// modeSwitch.c
+void set_requested_flight_mode(void) ;
+extern unsigned char request_autopilot_mode ;
+enum AUTOPILOT_MODE
+{
+	FLIGHT_MODE_SWITCH_MANUAL ,
+	FLIGHT_MODE_SWITCH_STABILIZED ,
+	FLIGHT_MODE_SWITCH_AUTONOMOUS ,
+} ;
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // Control code - rollCntrl.c, pitchCntrl.c, yawCntrl.c, altitudeCntrl.c
@@ -77,6 +88,10 @@ extern unsigned int wind_gain ;
 extern int pitch_control, roll_control, yaw_control, throttle_control ;
 extern union longww throttleFiltered ;
 extern int pitchAltitudeAdjust ;
+
+#if ( SPEED_CONTROL == 1)
+extern int desiredSpeed ; // Stored in 10ths of meters per second
+#endif
 
 // AltitudeHold type
 #define AH_NONE				0
@@ -96,6 +111,7 @@ void cameraServoMix( void ) ;
 #define AIRFRAME_VTAIL				1
 #define AIRFRAME_DELTA				2
 #define AIRFRAME_HELI				3		// Untested
+#define AIRFRAME_VTOL				4		// Untested
 
 // Negate VALUE if NEEDS_REVERSING is true
 #define REVERSE_IF_NEEDED(NEEDS_REVERSING, VALUE)		((NEEDS_REVERSING) ? (-(VALUE)) : (VALUE))
@@ -158,8 +174,8 @@ struct behavior_flag_bits {
 			unsigned int takeoff		: 1 ;	// disable altitude interpolation for faster climbout
 			unsigned int inverted		: 1 ;	// fly iverted
 			unsigned int hover			: 1 ;	// hover the plane
-			unsigned int rollLeft		: 1 ;				// unimplemented
-			unsigned int rollRight		: 1 ;				// unimplemented
+			unsigned int rollLeft		: 1 ;	// unimplemented
+			unsigned int rollRight		: 1 ;	// unimplemented
 			unsigned int trigger		: 1 ;	// trigger action
 			unsigned int loiter			: 1 ;	// stay on the current waypoint
 			unsigned int land			: 1 ;	// throttle off
@@ -203,6 +219,7 @@ extern union bfbts_word desired_behavior ;
 void init_serial( void ) ;
 void serial_output( char* format, ... ) ;
 void serial_output_8hz( void ) ;
+void mavlink_output_40hz( void ) ;
 
 // Serial Output Format
 #define SERIAL_NONE			0	// No serial data is sent
@@ -214,6 +231,7 @@ void serial_output_8hz( void ) ;
 #define SERIAL_MAGNETOMETER	6	// Debugging the magnetometer
 #define SERIAL_UDB_EXTRA	7	// Extra Telemetry beyond that provided by SERIAL_UDB for higher bandwidth connections
 #define SERIAL_CAM_TRACK	8	// Output Location in a format usable by a 2nd UDB to target its camera at this plane
+#define SERIAL_MAVLINK		9	// The Micro Air Vehicle Link protocol from the PixHawk Project
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -236,3 +254,5 @@ void osd_run_step( void );
 
 #define OSD_NTSC			0
 #define OSD_PAL				1
+
+#include "gain_variables.h"

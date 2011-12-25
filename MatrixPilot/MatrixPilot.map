@@ -1,4 +1,4 @@
-Microchip Technology Inc, vv3_30 (B) :
+Microchip Technology Inc, vv3_30 (B) -
 
 Tool Name:
   c:\program files (x86)\microchip\mplabc30\v3.30c\bin\bin\..\bin/pic30-coff-ld.exe
@@ -233,13 +233,13 @@ section                    address      alignment gaps    total length  (dec)
 .nbss                        0xb10                   0             0xa  (10)
 .ndata                       0xb1a                   0            0x24  (36)
 .nbss                        0xb3e                   0             0xe  (14)
-_0361a1504ef78837            0xb4c                   0             0x4  (4)
+_037b66904ef78b24            0xb4c                   0             0x4  (4)
 .ndata                       0xb50                   0             0x4  (4)
 .nbss                        0xb54                   0             0x4  (4)
 .ndata                       0xb58                   0             0x2  (2)
 .nbss                        0xb5a                   0             0x2  (2)
-_0361a0704ef78837            0xb5c                   0             0x2  (2)
-_0361a1c04ef78837            0xb5e                   0             0x2  (2)
+_037b65b04ef78b24            0xb5c                   0             0x2  (2)
+_037b67004ef78b24            0xb5e                   0             0x2  (2)
 .nbss                        0xb60                   0             0x2  (2)
 .ndata                       0xb62                   0             0x4  (4)
 .nbss                        0xb66                   0             0x2  (2)
@@ -2672,9 +2672,9 @@ __c30_signature
                     0x0b48                  flags
                     0x0b4a                  old_rtl_flags
 
-_0361a1504ef78837
+_037b66904ef78b24
                     0x0b4c          0x4
- _0361a1504ef78837
+ _037b66904ef78b24
                     0x0b4c          0x4 build\udb\telemetry.o
                     0x0b4c                  trap_source
 
@@ -2695,15 +2695,15 @@ _0361a1504ef78837
  .nbss              0x0b5a          0x2 build\udb\libUDB.o
                     0x0b5a                  udb_flags
 
-_0361a0704ef78837
+_037b65b04ef78b24
                     0x0b5c          0x2
- _0361a0704ef78837
+ _037b65b04ef78b24
                     0x0b5c          0x2 build\udb\telemetry.o
                     0x0b5c                  trap_flags
 
-_0361a1c04ef78837
+_037b67004ef78b24
                     0x0b5e          0x2
- _0361a1c04ef78837
+ _037b67004ef78b24
                     0x0b5e          0x2 build\udb\telemetry.o
                     0x0b5e                  osc_fail_count
 
