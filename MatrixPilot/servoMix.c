@@ -180,19 +180,32 @@ void servoMix( void )
 	// Mix roll_control into rudder
 	// Mix rudder_control into  rudder
 #if ( AIRFRAME_TYPE == AIRFRAME_VTOL )
-		long delta_roll_control = REVERSE_IF_NEEDED(ELEVON_VTAIL_SURFACES_REVERSED, roll_control) ;
-		
+		long vtol_elevon_roll_control = REVERSE_IF_NEEDED(ELEVON_VTAIL_SURFACES_REVERSED, roll_control) ;
+		long vtol_ruddervon_roll_control = REVERSE_IF_NEEDED(RUDDERVON_VTOL_SURFACES_REVERSED, roll_control) ;		
+
 		temp = pwManual[AILERON_INPUT_CHANNEL] +
-			REVERSE_IF_NEEDED(AILERON_CHANNEL_REVERSED, -delta_roll_control + pitch_control) ;
+			REVERSE_IF_NEEDED(AILERON_CHANNEL_REVERSED, -vtol_elevon_roll_control + pitch_control) ;
 		udb_pwOut[AILERON_OUTPUT_CHANNEL] = udb_servo_pulsesat( temp ) ;
 		
 		temp = pwManual[ELEVATOR_INPUT_CHANNEL] +
-			REVERSE_IF_NEEDED(ELEVATOR_CHANNEL_REVERSED, delta_roll_control + pitch_control) ;
+			REVERSE_IF_NEEDED(ELEVATOR_CHANNEL_REVERSED, vtol_elevon_roll_control + pitch_control) ;
 		udb_pwOut[ELEVATOR_OUTPUT_CHANNEL] = udb_servo_pulsesat( temp ) ;
 		
 		temp = pwManual[RUDDER_INPUT_CHANNEL] + 
-			REVERSE_IF_NEEDED(RUDDER_CHANNEL_REVERSED, yaw_control) ;
+			REVERSE_IF_NEEDED(RUDDER_CHANNEL_REVERSED, -vtol_ruddervon_roll_control + yaw_control) ;
 		udb_pwOut[RUDDER_OUTPUT_CHANNEL] =  udb_servo_pulsesat( temp ) ;
+
+		temp = pwManual[RUDDER_INPUT_CHANNEL] + 
+			REVERSE_IF_NEEDED(RUDDER_SECONDARY_CHANNEL_REVERSED, vtol_ruddervon_roll_control + yaw_control) ;
+		if ( temp <= 3000 ) //With only one pwm input and two outputs we need to reverse the pulse on secondary output 2000-4000 range
+		{
+			temp = 3000 + (3000 - temp) ;
+		}
+		else
+		{
+			temp = 3000 - (temp - 3000) ;
+		} 
+		udb_pwOut[RUDDER_SECONDARY_OUTPUT_CHANNEL] =  udb_servo_pulsesat( temp ) ;
 		
 		if ( pwManual[THROTTLE_INPUT_CHANNEL] == 0 )
 		{

@@ -70,7 +70,7 @@
 //    AIRFRAME_DELTA			Aileron and Elevator as Elevons, and Rudder(optional)
 //	  AIRFRAME_VTOL				Aileron and Elevator as Elevons, and Aileron and Rudder as Rudderon
 // (Note that although AIRFRAME_HELI is also recognized, the code for this airframe type is not ready.)
-#define AIRFRAME_TYPE						AIRFRAME_STANDARD
+#define AIRFRAME_TYPE						AIRFRAME_VTOL
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -84,10 +84,10 @@
 // Roll, Pitch, and Yaw Stabilization
 // Set any of these to 0 to disable the stabilization in that axis.
 #define ROLL_STABILIZATION_AILERONS			1
-#define ROLL_STABILIZATION_RUDDER			0
+#define ROLL_STABILIZATION_RUDDER			0 //**TODO** VTOL impacts???
 #define PITCH_STABILIZATION					1
 #define YAW_STABILIZATION_RUDDER			1
-#define YAW_STABILIZATION_AILERON			1
+#define YAW_STABILIZATION_AILERON			0
 
 // Aileron and Rudder Navigation
 // Set either of these to 0 to disable use of that control surface for navigation.
@@ -110,7 +110,7 @@
 // altitude is determined by the position of the throttle stick on the transmitter.
 // NOTE: even when set to AH_NONE, MatrixPilot will still try to stabilize pitch as long
 // as PITCH_STABILIZATION is set to 1 above, but will not aim for any specific altitude.
-#define ALTITUDEHOLD_STABILIZED				AH_FULL
+#define ALTITUDEHOLD_STABILIZED				AH_NONE
 #define ALTITUDEHOLD_WAYPOINT				AH_FULL
 
 // Speed Control
@@ -127,7 +127,7 @@
 
 // Hovering
 // Set these to 1 to enable stabilization of hovering in stabilized and/or waypoint modes.
-#define HOVERING_STABILIZED_MODE			0
+#define HOVERING_STABILIZED_MODE			1
 #define HOVERING_WAYPOINT_MODE				0
 
 // Note: As of MatrixPilot 3.0, Dead Reckoning and Wind Estimation are automatically enabled.
@@ -182,11 +182,11 @@
 // Use as is, or edit to match your setup.
 //   - If you're set up to use Rudder Navigation (like MatrixNav), then you may want to swap
 //     the aileron and rudder channels so that rudder is CHANNEL_1, and aileron is 5.
-#define THROTTLE_INPUT_CHANNEL				CHANNEL_3
-#define AILERON_INPUT_CHANNEL				CHANNEL_1
-#define ELEVATOR_INPUT_CHANNEL				CHANNEL_2
-#define RUDDER_INPUT_CHANNEL				CHANNEL_5
-#define MODE_SWITCH_INPUT_CHANNEL			CHANNEL_4
+#define THROTTLE_INPUT_CHANNEL				CHANNEL_1
+#define AILERON_INPUT_CHANNEL				CHANNEL_2
+#define ELEVATOR_INPUT_CHANNEL				CHANNEL_3
+#define RUDDER_INPUT_CHANNEL				CHANNEL_4
+#define MODE_SWITCH_INPUT_CHANNEL			CHANNEL_5
 #define CAMERA_PITCH_INPUT_CHANNEL			CHANNEL_UNUSED
 #define CAMERA_YAW_INPUT_CHANNEL			CHANNEL_UNUSED
 #define OSD_MODE_SWITCH_INPUT_CHANNEL		CHANNEL_UNUSED
@@ -201,7 +201,7 @@
 //   5 also enables E2 as the 5th output channel
 //   6 also enables E4 as the 6th output channel
 //   NOTE: If USE_PPM_INPUT is enabled above, up to 9 outputs are available.)
-#define NUM_OUTPUTS							4
+#define NUM_OUTPUTS							5
 
 // Channel numbers for each output
 // Use as is, or edit to match your setup.
@@ -214,12 +214,12 @@
 // connect THROTTLE_OUTPUT_CHANNEL to one of the built-in Outputs (1, 2, or 3) to make
 // sure your board gets power.
 // 
-#define THROTTLE_OUTPUT_CHANNEL				CHANNEL_3
-#define AILERON_OUTPUT_CHANNEL				CHANNEL_1
-#define ELEVATOR_OUTPUT_CHANNEL				CHANNEL_2
+#define THROTTLE_OUTPUT_CHANNEL				CHANNEL_1
+#define AILERON_OUTPUT_CHANNEL				CHANNEL_2
+#define ELEVATOR_OUTPUT_CHANNEL				CHANNEL_3
 #define RUDDER_OUTPUT_CHANNEL				CHANNEL_4
 #define AILERON_SECONDARY_OUTPUT_CHANNEL	CHANNEL_UNUSED
-#define RUDDER_SECONDARY_OUTPUT_CHANNEL		CHANNEL_UNUSED
+#define RUDDER_SECONDARY_OUTPUT_CHANNEL		CHANNEL_5
 #define CAMERA_PITCH_OUTPUT_CHANNEL			CHANNEL_UNUSED
 #define CAMERA_YAW_OUTPUT_CHANNEL			CHANNEL_UNUSED
 #define TRIGGER_OUTPUT_CHANNEL				CHANNEL_UNUSED
@@ -247,7 +247,7 @@
 // Set this to 1 if you need to switch the left and right elevon or vtail surfaces
 #define ELEVON_VTAIL_SURFACES_REVERSED		0
 // Set this to 1 if you need to switch the Ruddervon VTOL surfaces
-#define RUDDERVON_VTOL_SURFACES_REVERSED		0
+#define RUDDERVON_VTOL_SURFACES_REVERSED	0
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -474,16 +474,16 @@
 // HOVER_PITCH_TOWARDS_WP is the max angle in degrees to pitch the nose down towards the WP while navigating
 // HOVER_NAV_MAX_PITCH_RADIUS is the radius around a waypoint in meters, within which the HOVER_PITCH_TOWARDS_WP
 //                            value is proportionally scaled down.
-#define HOVER_ROLLKP						0.05
-#define HOVER_ROLLKD						0.05
-#define HOVER_PITCHGAIN						0.2
+#define HOVER_ROLLKP						0.5		//0.05
+#define HOVER_ROLLKD						0.25	//0.05
+#define HOVER_PITCHGAIN						0.5		//0.2
 #define HOVER_PITCHKD						0.25
 #define HOVER_PITCH_OFFSET					0.0		// + leans towards top, - leans towards bottom
-#define HOVER_YAWKP							0.2
+#define HOVER_YAWKP							0.5		//0.2
 #define HOVER_YAWKD							0.25
 #define HOVER_YAW_OFFSET					0.0
-#define HOVER_PITCH_TOWARDS_WP			   30.0
-#define HOVER_NAV_MAX_PITCH_RADIUS		   20
+#define HOVER_PITCH_TOWARDS_WP			   	30.0
+#define HOVER_NAV_MAX_PITCH_RADIUS		   	20
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -604,7 +604,7 @@
 // The following can be used to do a ground check of stabilization without a GPS.
 // If you define TestGains, stabilization functions
 // will be enabled, even without GPS or Tx turned on. (Tx is optional)
-// #define TestGains						// uncomment this line if you want to test your gains without using GPS
+//#define TestGains						// uncomment this line if you want to test your gains without using GPS
 
 // Set this to 1 to calculate and print out free stack space
 #define RECORD_FREE_STACK_SPACE 			0
