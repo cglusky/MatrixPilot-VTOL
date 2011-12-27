@@ -239,7 +239,7 @@
 #define ELEVATOR_CHANNEL_REVERSED			HW_SWITCH_2
 #define RUDDER_CHANNEL_REVERSED				HW_SWITCH_3
 #define AILERON_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
-#define RUDDER_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
+#define RUDDER_SECONDARY_CHANNEL_REVERSED	1 // Hardcoded to be unreversed, since we have only 3 switches.
 #define THROTTLE_CHANNEL_REVERSED			0 // Set to 1 to hardcode a channel to be reversed
 #define CAMERA_PITCH_CHANNEL_REVERSED		0
 #define CAMERA_YAW_CHANNEL_REVERSED			0
@@ -416,7 +416,7 @@
 
 // SERVOSAT limits servo throw by controlling pulse width saturation.
 // set it to 1.0 if you want full servo throw, otherwise set it to the portion that you want
-#define SERVOSAT							1.0
+#define SERVOSAT							0.9 //1.0
 
 // Aileron/Roll Control Gains
 // ROLLKP is the proportional gain, approximately 0.25
@@ -424,10 +424,10 @@
 // YAWKP_AILERON is the proportional feedback gain for ailerons in response to yaw error
 // YAWKD_AILERON is the derivative feedback gain for ailerons in response to yaw rotation
 // AILERON_BOOST is the additional gain multiplier for the manually commanded aileron deflection
-#define ROLLKP								0.20
-#define ROLLKD								0.05
-#define YAWKP_AILERON						0.10
-#define YAWKD_AILERON						0.05
+#define ROLLKP								1.0 	//0.20
+#define ROLLKD								0.5		//0.05
+#define YAWKP_AILERON						0.0		//0.10
+#define YAWKD_AILERON						0.0		//0.05
 #define AILERON_BOOST						1.00
 
 // Elevator/Pitch Control Gains
@@ -436,11 +436,11 @@
 // RUDDER_ELEV_MIX is the degree of elevator adjustment for rudder and banking
 // AILERON_ELEV_MIX is the degree of elevator adjustment for aileron
 // ELEVATOR_BOOST is the additional gain multiplier for the manually commanded elevator deflection
-#define PITCHGAIN							0.10
-#define PITCHKD								0.04
-#define RUDDER_ELEV_MIX						0.20
-#define ROLL_ELEV_MIX						0.05
-#define ELEVATOR_BOOST						0.50
+#define PITCHGAIN							1.0		//0.10
+#define PITCHKD								0.5		//0.04
+#define RUDDER_ELEV_MIX						0.0		//0.20
+#define ROLL_ELEV_MIX						0.0		//0.05
+#define ELEVATOR_BOOST						1.0		//0.50
 
 // Neutral pitch angle of the plane (in degrees) when flying inverted
 // Use this to add extra "up" elevator while the plane is inverted, to avoid losing altitude.
@@ -454,10 +454,10 @@
 // MANUAL_AILERON_RUDDER_MIX is the fraction of manual aileron control to mix into the rudder when
 // in stabilized or waypoint mode.  This mainly helps aileron-initiated turning while in stabilized.
 // RUDDER_BOOST is the additional gain multiplier for the manually commanded rudder deflection
-#define YAWKP_RUDDER						0.05
-#define YAWKD_RUDDER						0.05
-#define ROLLKP_RUDDER						0.06
-#define ROLLKD_RUDDER						0.05
+#define YAWKP_RUDDER						1.0		//0.05
+#define YAWKD_RUDDER						0.5		//0.05
+#define ROLLKP_RUDDER						0.0		//0.06
+#define ROLLKD_RUDDER						0.0		//0.05
 #define MANUAL_AILERON_RUDDER_MIX			0.00
 #define RUDDER_BOOST						1.00
 
