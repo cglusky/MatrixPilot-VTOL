@@ -248,7 +248,7 @@
 // Set this to 1 if you need to switch the left and right elevon or vtail surfaces
 #define ELEVON_VTAIL_SURFACES_REVERSED		0
 // Set this to 1 if you need to switch the Ruddervon VTOL surfaces
-#define RUDDERVON_VTOL_SURFACES_REVERSED	0
+#define RUDDERON_VTOL_SURFACES_REVERSED	0
 
 
 ////////////////////////////////////////////////////////////////////////////////
