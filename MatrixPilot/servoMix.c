@@ -52,6 +52,7 @@ void servoMix( void )
 		pwManual[AILERON_INPUT_CHANNEL] += ((pwManual[AILERON_INPUT_CHANNEL] - udb_pwTrim[AILERON_INPUT_CHANNEL]) * aileronbgain) >> 3 ;
 		pwManual[ELEVATOR_INPUT_CHANNEL] += ((pwManual[ELEVATOR_INPUT_CHANNEL] - udb_pwTrim[ELEVATOR_INPUT_CHANNEL]) * elevatorbgain) >> 3 ;
 		pwManual[RUDDER_INPUT_CHANNEL] += ((pwManual[RUDDER_INPUT_CHANNEL] - udb_pwTrim[RUDDER_INPUT_CHANNEL]) * rudderbgain) >> 3 ;
+		pwManual[RUDDER_SECONDARY_INPUT_CHANNEL] += ((pwManual[RUDDER_SECONDARY_INPUT_CHANNEL] - udb_pwTrim[RUDDER_SECONDARY_INPUT_CHANNEL]) * rudderbgain) >> 3 ;
 	}
 	
 	// Standard airplane airframe
