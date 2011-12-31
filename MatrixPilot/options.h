@@ -240,7 +240,7 @@
 #define ELEVATOR_CHANNEL_REVERSED			HW_SWITCH_2
 #define RUDDER_CHANNEL_REVERSED				HW_SWITCH_3
 #define AILERON_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
-#define RUDDER_SECONDARY_CHANNEL_REVERSED	1 // Hardcoded to be unreversed, since we have only 3 switches.
+#define RUDDER_SECONDARY_CHANNEL_REVERSED	0 // Hardcoded to be unreversed, since we have only 3 switches.
 #define THROTTLE_CHANNEL_REVERSED			0 // Set to 1 to hardcode a channel to be reversed
 #define CAMERA_PITCH_CHANNEL_REVERSED		0
 #define CAMERA_YAW_CHANNEL_REVERSED			0
@@ -283,7 +283,7 @@
 //
 // FAILSAFE_INPUT_MIN and _MAX define the range within which we consider the radio on.
 // Normal signals should fall within about 2000 - 4000.
-#define FAILSAFE_INPUT_CHANNEL				THROTTLE_INPUT_CHANNEL
+#define FAILSAFE_INPUT_CHANNEL				AILERON_INPUT_CHANNEL
 #define FAILSAFE_INPUT_MIN					1500
 #define FAILSAFE_INPUT_MAX					4500
 
@@ -475,15 +475,15 @@
 // HOVER_PITCH_TOWARDS_WP is the max angle in degrees to pitch the nose down towards the WP while navigating
 // HOVER_NAV_MAX_PITCH_RADIUS is the radius around a waypoint in meters, within which the HOVER_PITCH_TOWARDS_WP
 //                            value is proportionally scaled down.
-#define HOVER_ROLLKP						0.5		//0.05
-#define HOVER_ROLLKD						0.25	//0.05
-#define HOVER_PITCHGAIN						0.5		//0.2
-#define HOVER_PITCHKD						0.25
+#define HOVER_ROLLKP						1.0		//0.05
+#define HOVER_ROLLKD						0.5	    //0.05
+#define HOVER_PITCHGAIN						1.0		//0.2 ***TODO Why is this not HOVER_PITCHKP?
+#define HOVER_PITCHKD						0.5 
 #define HOVER_PITCH_OFFSET					0.0		// + leans towards top, - leans towards bottom
-#define HOVER_YAWKP							0.5		//0.2
-#define HOVER_YAWKD							0.25
+#define HOVER_YAWKP							1.0		//0.2
+#define HOVER_YAWKD							0.5 	//0.25
 #define HOVER_YAW_OFFSET					0.0
-#define HOVER_PITCH_TOWARDS_WP			   	30.0
+#define HOVER_PITCH_TOWARDS_WP			   	0.0		//30.0
 #define HOVER_NAV_MAX_PITCH_RADIUS		   	20
 
 
