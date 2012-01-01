@@ -21,7 +21,7 @@
 
 #include "defines.h"
 
-#define HOVERYOFFSET ((long)(HOVER_YAW_OFFSET*(RMAX/57.3)))
+#define HOVERYOFFSET ((long)(HOVER_YAW_OFFSET*(RMAX/57.3))) //***TODO Why is this here?
 
 #if(GAINS_VARIABLE == 0)
 	const int yawkdrud 	= YAWKD_RUDDER*SCALEGYRO*RMAX ;
@@ -102,7 +102,7 @@ void normalYawCntrl(void)
 		}
 	}
 	
-	if ( flags._.pitch_feedback )
+	if ( flags._.pitch_feedback ) 
 	{
 		int ail_offset = (udb_flags._.radio_on) ? (udb_pwIn[AILERON_INPUT_CHANNEL] - udb_pwTrim[AILERON_INPUT_CHANNEL]) : 0 ;
 		ail_rud_mix = MANUAL_AILERON_RUDDER_MIX * REVERSE_IF_NEEDED(AILERON_CHANNEL_REVERSED, ail_offset) ;
@@ -132,10 +132,11 @@ void hoverYawCntrl(void)
 	{
 		gyroYawFeedback.WW = __builtin_mulss( hoveryawkd , omegaAccum[2] ) ;
 		
-		int yawInput = ( udb_flags._.radio_on == 1 ) ? REVERSE_IF_NEEDED(RUDDER_CHANNEL_REVERSED, udb_pwIn[RUDDER_INPUT_CHANNEL] - udb_pwTrim[RUDDER_INPUT_CHANNEL]) : 0 ;
-		int manualYawOffset = yawInput * (int)(RMAX/2000);
+		//int yawInput = ( udb_flags._.radio_on == 1 ) ? REVERSE_IF_NEEDED(RUDDER_CHANNEL_REVERSED, udb_pwIn[RUDDER_INPUT_CHANNEL] - udb_pwTrim[RUDDER_INPUT_CHANNEL]) : 0 ;
+		//int manualYawOffset = yawInput * (int)(RMAX/2000);
 		
-		yawAccum.WW = __builtin_mulss( rmat[6] + HOVERYOFFSET + manualYawOffset , hoveryawkp ) ;
+		//yawAccum.WW = __builtin_mulss( rmat[6] + HOVERYOFFSET + manualYawOffset , hoveryawkp ) ;
+		yawAccum.WW = __builtin_mulss( rmat[6] + HOVERYOFFSET , hoveryawkp ) ;
 	}
 	else
 	{
