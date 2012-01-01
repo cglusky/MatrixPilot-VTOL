@@ -182,12 +182,12 @@ void servoMix( void )
 	// Mix rudder_control into  rudder
 #if ( AIRFRAME_TYPE == AIRFRAME_VTOL )
 		long vtol_elevon_roll_control = REVERSE_IF_NEEDED(ELEVON_VTAIL_SURFACES_REVERSED, roll_control) ;
-		long vtol_rudderon_roll_control = REVERSE_IF_NEEDED(RUDDERON_VTOL_SURFACES_REVERSED, roll_control) ;		
+		long vtol_rudderon_roll_control = REVERSE_IF_NEEDED(RUDDERON_VTOL_SURFACES_REVERSED, roll_control) ;
 
 		temp = pwManual[AILERON_INPUT_CHANNEL] +
 			REVERSE_IF_NEEDED(AILERON_CHANNEL_REVERSED, -vtol_elevon_roll_control/2 + pitch_control) ;
 		udb_pwOut[AILERON_OUTPUT_CHANNEL] = udb_servo_pulsesat( temp ) ;
-		
+	
 		temp = pwManual[ELEVATOR_INPUT_CHANNEL] +
 			REVERSE_IF_NEEDED(ELEVATOR_CHANNEL_REVERSED, vtol_elevon_roll_control/2 + pitch_control) ;
 		udb_pwOut[ELEVATOR_OUTPUT_CHANNEL] = udb_servo_pulsesat( temp ) ;

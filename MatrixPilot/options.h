@@ -482,7 +482,7 @@
 #define HOVER_PITCH_OFFSET					0.0		// + leans towards top, - leans towards bottom
 #define HOVER_YAWKP							1.0		//0.2
 #define HOVER_YAWKD							0.5 	//0.25
-#define HOVER_YAW_OFFSET					0.0		// Testing non zero values
+#define HOVER_YAW_OFFSET					0.0		// ***TODO Test non zero values for control mixing for VTOL
 #define HOVER_PITCH_TOWARDS_WP			   	0.0		//30.0 ***TODO Test for VTOL with nav mode
 #define HOVER_NAV_MAX_PITCH_RADIUS		   	20
 
