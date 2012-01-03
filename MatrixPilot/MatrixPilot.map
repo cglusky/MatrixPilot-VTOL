@@ -1,4 +1,4 @@
-Microchip Technology Inc, vv3_30 (B) 5
+Microchip Technology Inc, vv3_30 (B) ;
 
 Tool Name:
   c:\program files (x86)\microchip\mplabc30\v3.30c\bin\bin\..\bin/pic30-coff-ld.exe
@@ -211,9 +211,9 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                      0x1f28               0x1de           0x2cd  (717)
 .text                       0x2106              0x244e          0x3675  (13941)
 .dinit                      0x4554               0x25c           0x38a  (906)
-.text                       0x47b0              0x15cc          0x20b2  (8370)
+.text                       0x47b0              0x15ea          0x20df  (8415)
 
-                     Total program memory used (bytes):         0x8aba  (35514) 72%
+                     Total program memory used (bytes):         0x8ae7  (35559) 72%
 
 
 Data Memory  [Origin = 0x800, Length = 0x800]
@@ -233,13 +233,13 @@ section                    address      alignment gaps    total length  (dec)
 .nbss                        0xb12                   0             0xa  (10)
 .ndata                       0xb1c                   0            0x24  (36)
 .nbss                        0xb40                   0             0xe  (14)
-_036b86904f00cb39            0xb4e                   0             0x4  (4)
+_037f86904f027b07            0xb4e                   0             0x4  (4)
 .ndata                       0xb52                   0             0x4  (4)
 .nbss                        0xb56                   0             0x4  (4)
 .ndata                       0xb5a                   0             0x2  (2)
 .nbss                        0xb5c                   0             0x2  (2)
-_036b85b04f00cb39            0xb5e                   0             0x2  (2)
-_036b87004f00cb39            0xb60                   0             0x2  (2)
+_037f85b04f027b07            0xb5e                   0             0x2  (2)
+_037f87004f027b07            0xb60                   0             0x2  (2)
 .nbss                        0xb62                   0             0x2  (2)
 .ndata                       0xb64                   0             0x4  (4)
 .nbss                        0xb68                   0             0x2  (2)
@@ -805,63 +805,63 @@ External Symbols in Program Memory (by address):
                   0x00527c                  _serial_output
                   0x0052ba                  _udb_serial_callback_get_byte_to_send
                   0x0052e6                  _serial_output_8hz
-                  0x0052ec                  _pitchCntrl
-                  0x005306                  _normalPitchCntrl
-                  0x005428                  _hoverPitchCntrl
-                  0x00548e                  _init_behavior
-                  0x0054a0                  _setBehavior
-                  0x0054c6                  _canStabilizeInverted
-                  0x0054ce                  _canStabilizeHover
-                  0x0054f6                  _updateBehavior
-                  0x0055ba                  _updateTriggerAction
-                  0x005608                  _triggerActionSetValue
-                  0x005614                  _gps_nav_valid
-                  0x00562a                  _gps_startup_sequence
-                  0x005666                  _msg_B3
-                  0x005678                  _msg_A0
-                  0x005694                  _msg_A2
-                  0x0056a4                  _msg_PL1
-                  0x0056ba                  _msg_PL2
-                  0x0056e4                  _msg_MSG41
-                  0x00571c                  _msg_MSGU
-                  0x005742                  _msg_B0
-                  0x00575a                  _commit_gps_data
-                  0x005798                  _dcm_init
-                  0x0057a6                  _dcm_run_init_step
-                  0x0057d2                  _udb_callback_read_sensors
-                  0x0057dc                  _udb_servo_callback_prepare_outputs
-                  0x0057fc                  _dcm_calibrate
-                  0x00580e                  _dcm_set_origin_location
-                  0x00584a                  _dcm_absolute_to_relative
-                  0x0058b4                  _yawCntrl
-                  0x0058cc                  _normalYawCntrl
-                  0x005994                  _hoverYawCntrl
-                  0x0059ca                  _rollCntrl
-                  0x0059e2                  _normalRollCntrl
-                  0x005a60                  _hoverRollCntrl
-                  0x005ab2                  _init_servoPrepare
-                  0x005b30                  _dcm_servo_callback_prepare_outputs
-                  0x005b74                  _manualPassthrough
-                  0x005b8c                  _udb_init
-                  0x005bae                  _udb_run
-                  0x005bb4                  _udb_init_leds
-                  0x005bbc                  _udb_a2d_record_offsets
-                  0x005bde                  _udb_servo_record_trims
-                  0x005c06                  _udb_servo_pulsesat
-                  0x005c30                  _calculate_analog_sensor_values
-                  0x005c36                  _cam_pitchServoLimit
-                  0x005c60                  _cam_yawServoLimit
-                  0x005c8a                  _set_camera_view
-                  0x005ca2                  _compute_camera_view
-                  0x005cc0                  _cameraCntrl
-                  0x005cc6                  _dcm_enable_yaw_drift_correction
-                  0x005cec                  _estYawDrift
-                  0x005d3c                  __MathError
-                  0x005d40                  __StackError
-                  0x005d44                  __AddressError
-                  0x005d48                  __OscillatorFail
-                  0x005d50                  __DefaultInterrupt
-                  0x005d66                  _main
+                  0x0052ec                  _init_behavior
+                  0x0052fe                  _setBehavior
+                  0x005324                  _canStabilizeInverted
+                  0x00532c                  _canStabilizeHover
+                  0x005354                  _updateBehavior
+                  0x005436                  _updateTriggerAction
+                  0x005484                  _triggerActionSetValue
+                  0x005490                  _pitchCntrl
+                  0x0054aa                  _normalPitchCntrl
+                  0x0055cc                  _hoverPitchCntrl
+                  0x005632                  _gps_nav_valid
+                  0x005648                  _gps_startup_sequence
+                  0x005684                  _msg_B3
+                  0x005696                  _msg_A0
+                  0x0056b2                  _msg_A2
+                  0x0056c2                  _msg_PL1
+                  0x0056d8                  _msg_PL2
+                  0x005702                  _msg_MSG41
+                  0x00573a                  _msg_MSGU
+                  0x005760                  _msg_B0
+                  0x005778                  _commit_gps_data
+                  0x0057b6                  _dcm_init
+                  0x0057c4                  _dcm_run_init_step
+                  0x0057f0                  _udb_callback_read_sensors
+                  0x0057fa                  _udb_servo_callback_prepare_outputs
+                  0x00581a                  _dcm_calibrate
+                  0x00582c                  _dcm_set_origin_location
+                  0x005868                  _dcm_absolute_to_relative
+                  0x0058d2                  _yawCntrl
+                  0x0058ea                  _normalYawCntrl
+                  0x0059b2                  _hoverYawCntrl
+                  0x0059e8                  _rollCntrl
+                  0x005a00                  _normalRollCntrl
+                  0x005a7e                  _hoverRollCntrl
+                  0x005ad0                  _init_servoPrepare
+                  0x005b4e                  _dcm_servo_callback_prepare_outputs
+                  0x005b92                  _manualPassthrough
+                  0x005baa                  _udb_init
+                  0x005bcc                  _udb_run
+                  0x005bd2                  _udb_init_leds
+                  0x005bda                  _udb_a2d_record_offsets
+                  0x005bfc                  _udb_servo_record_trims
+                  0x005c24                  _udb_servo_pulsesat
+                  0x005c4e                  _calculate_analog_sensor_values
+                  0x005c54                  _cam_pitchServoLimit
+                  0x005c7e                  _cam_yawServoLimit
+                  0x005ca8                  _set_camera_view
+                  0x005cc0                  _compute_camera_view
+                  0x005cde                  _cameraCntrl
+                  0x005ce4                  _dcm_enable_yaw_drift_correction
+                  0x005d0a                  _estYawDrift
+                  0x005d5a                  __MathError
+                  0x005d5e                  __StackError
+                  0x005d62                  __AddressError
+                  0x005d66                  __OscillatorFail
+                  0x005d6e                  __DefaultInterrupt
+                  0x005d84                  _main
                   0xf8000a                  __FGS.sec
 
 External Symbols in Program Memory (by name):
@@ -876,8 +876,8 @@ External Symbols in Program Memory (by name):
                   0x001f10                  _VectorPower
                   0x001ef4                  _VectorScale
                   0x004e42                  __ADCInterrupt
-                  0x005d44                  __AddressError
-                  0x005d50                  __DefaultInterrupt
+                  0x005d62                  __AddressError
+                  0x005d6e                  __DefaultInterrupt
                   0x0013bc                  __Dnorm
                   0xf8000a                  __FGS.sec
                   0x001154                  __Genld
@@ -890,13 +890,13 @@ External Symbols in Program Memory (by name):
                   0x000fcc                  __LDunscale
                   0x000860                  __Ldtob
                   0x000ca6                  __Litob
-                  0x005d3c                  __MathError
-                  0x005d48                  __OscillatorFail
+                  0x005d5a                  __MathError
+                  0x005d66                  __OscillatorFail
                   0x004b9a                  __PWMInterrupt
                   0x000244                  __Printf
                   0x0003d2                  __Putfld
                   0x0006cc                  __Puttxt
-                  0x005d40                  __StackError
+                  0x005d5e                  __StackError
                   0x004ad8                  __T1Interrupt
                   0x004b42                  __T3Interrupt
                   0x005006                  __T4Interrupt
@@ -960,29 +960,29 @@ External Symbols in Program Memory (by name):
                   0x0033dc                  _altitudeCntrl
                   0x002786                  _arcsine
                   0x001f28                  _bin_mode
-                  0x005c30                  _calculate_analog_sensor_values
+                  0x005c4e                  _calculate_analog_sensor_values
                   0x003c3a                  _calibrateS
                   0x00268c                  _calibrate_gyros
-                  0x005c36                  _cam_pitchServoLimit
-                  0x005c60                  _cam_yawServoLimit
-                  0x005cc0                  _cameraCntrl
+                  0x005c54                  _cam_pitchServoLimit
+                  0x005c7e                  _cam_yawServoLimit
+                  0x005cde                  _cameraCntrl
                   0x003a08                  _cameraServoMix
-                  0x0054ce                  _canStabilizeHover
-                  0x0054c6                  _canStabilizeInverted
-                  0x00575a                  _commit_gps_data
+                  0x00532c                  _canStabilizeHover
+                  0x005324                  _canStabilizeInverted
+                  0x005778                  _commit_gps_data
                   0x0030e2                  _compute_bearing_to_goal
-                  0x005ca2                  _compute_camera_view
+                  0x005cc0                  _compute_camera_view
                   0x00282e                  _cosine
-                  0x00584a                  _dcm_absolute_to_relative
-                  0x0057fc                  _dcm_calibrate
+                  0x005868                  _dcm_absolute_to_relative
+                  0x00581a                  _dcm_calibrate
                   0x003056                  _dcm_callback_gps_location_updated
-                  0x005cc6                  _dcm_enable_yaw_drift_correction
-                  0x005798                  _dcm_init
+                  0x005ce4                  _dcm_enable_yaw_drift_correction
+                  0x0057b6                  _dcm_init
                   0x002106                  _dcm_init_rmat
                   0x002710                  _dcm_run_imu_step
-                  0x0057a6                  _dcm_run_init_step
-                  0x005b30                  _dcm_servo_callback_prepare_outputs
-                  0x00580e                  _dcm_set_origin_location
+                  0x0057c4                  _dcm_run_init_step
+                  0x005b4e                  _dcm_servo_callback_prepare_outputs
+                  0x00582c                  _dcm_set_origin_location
                   0x003df0                  _dead_reckon
                   0x0032f0                  _determine_navigation_deflection
                   0x001454                  _div
@@ -993,36 +993,36 @@ External Symbols in Program Memory (by name):
                   0x003c02                  _ent_returnS
                   0x003bce                  _ent_stabilizedS
                   0x003be6                  _ent_waypointS
-                  0x005cec                  _estYawDrift
+                  0x005d0a                  _estYawDrift
                   0x0047b0                  _estimateWind
                   0x0033d4                  _excess_energy_height
                   0x002fb2                  _flightplan_live_begin
                   0x002ff0                  _flightplan_live_commit
                   0x002fbc                  _flightplan_live_received_byte
                   0x002cae                  _get_fixed_origin
-                  0x005614                  _gps_nav_valid
-                  0x00562a                  _gps_startup_sequence
+                  0x005632                  _gps_nav_valid
+                  0x005648                  _gps_startup_sequence
                   0x004086                  _gpsoutbin
                   0x0040a2                  _gpsoutline
                   0x0051b2                  _hex_char_val
                   0x0036f2                  _hoverAltitudeCntrl
-                  0x005428                  _hoverPitchCntrl
-                  0x005a60                  _hoverRollCntrl
-                  0x005994                  _hoverYawCntrl
+                  0x0055cc                  _hoverPitchCntrl
+                  0x005a7e                  _hoverRollCntrl
+                  0x0059b2                  _hoverYawCntrl
                   0x0020e2                  _hoverpitchgain
                   0x0020e4                  _hoverpitchkd
                   0x0020f2                  _hoverrollkd
                   0x0020f0                  _hoverrollkp
                   0x0020fa                  _hoveryawkd
                   0x0020f8                  _hoveryawkp
-                  0x00548e                  _init_behavior
+                  0x0052ec                  _init_behavior
                   0x002c40                  _init_flightplan
                   0x005142                  _init_serial
-                  0x005ab2                  _init_servoPrepare
+                  0x005ad0                  _init_servoPrepare
                   0x003aa2                  _init_states
                   0x00111a                  _ldiv
-                  0x005d66                  _main
-                  0x005b74                  _manualPassthrough
+                  0x005d84                  _main
+                  0x005b92                  _manualPassthrough
                   0x003cda                  _manualS
                   0x0036ae                  _manualThrottle
                   0x000fb8                  _memchr
@@ -1030,22 +1030,22 @@ External Symbols in Program Memory (by name):
                   0x001f46                  _mode
                   0x001f44                  _mode_length
                   0x001f50                  _msg41parse
-                  0x005678                  _msg_A0
-                  0x005694                  _msg_A2
-                  0x005742                  _msg_B0
-                  0x005666                  _msg_B3
-                  0x0056e4                  _msg_MSG41
-                  0x00571c                  _msg_MSGU
-                  0x0056a4                  _msg_PL1
-                  0x0056ba                  _msg_PL2
+                  0x005696                  _msg_A0
+                  0x0056b2                  _msg_A2
+                  0x005760                  _msg_B0
+                  0x005684                  _msg_B3
+                  0x005702                  _msg_MSG41
+                  0x00573a                  _msg_MSGU
+                  0x0056c2                  _msg_PL1
+                  0x0056d8                  _msg_PL2
                   0x002d0e                  _next_waypoint
                   0x003454                  _normalAltitudeCntrl
-                  0x005306                  _normalPitchCntrl
-                  0x0059e2                  _normalRollCntrl
-                  0x0058cc                  _normalYawCntrl
+                  0x0054aa                  _normalPitchCntrl
+                  0x005a00                  _normalRollCntrl
+                  0x0058ea                  _normalYawCntrl
                   0x002438                  _normalize
                   0x0022a4                  _omegaSOG
-                  0x0052ec                  _pitchCntrl
+                  0x005490                  _pitchCntrl
                   0x0020d2                  _pitch_offset_centred_pwm
                   0x0020cc                  _pitch_servo_high_ratio
                   0x0020d6                  _pitch_servo_pwm_max
@@ -1058,7 +1058,7 @@ External Symbols in Program Memory (by name):
                   0x0028a6                  _rect_to_polar
                   0x002962                  _rect_to_polar16
                   0x003dac                  _returnS
-                  0x0059ca                  _rollCntrl
+                  0x0059e8                  _rollCntrl
                   0x0020e8                  _rollElevMixGain
                   0x00250a                  _roll_pitch_drift
                   0x0020ee                  _rollkd
@@ -1073,9 +1073,9 @@ External Symbols in Program Memory (by name):
                   0x00527c                  _serial_output
                   0x0052e6                  _serial_output_8hz
                   0x00374a                  _servoMix
-                  0x0054a0                  _setBehavior
+                  0x0052fe                  _setBehavior
                   0x003448                  _setTargetAltitude
-                  0x005c8a                  _set_camera_view
+                  0x005ca8                  _set_camera_view
                   0x00306a                  _set_goal
                   0x0033f4                  _set_throttle_control
                   0x003006                  _setup_origin
@@ -1094,39 +1094,39 @@ External Symbols in Program Memory (by name):
                   0x0003c0                  _strchr
                   0x000228                  _strlen
                   0x0020d0                  _tan_pitch_in_stabilized_mode
-                  0x005608                  _triggerActionSetValue
-                  0x005bbc                  _udb_a2d_record_offsets
+                  0x005484                  _triggerActionSetValue
+                  0x005bda                  _udb_a2d_record_offsets
                   0x003aba                  _udb_background_callback_periodic
                   0x0040fa                  _udb_background_callback_triggered
                   0x004b3a                  _udb_background_trigger
                   0x003c1e                  _udb_callback_radio_did_turn_off
-                  0x0057d2                  _udb_callback_read_sensors
+                  0x0057f0                  _udb_callback_read_sensors
                   0x004b6a                  _udb_cpu_load
                   0x0040b8                  _udb_gps_callback_get_byte_to_send
                   0x0040ec                  _udb_gps_callback_received_byte
                   0x004c42                  _udb_gps_check_rate
                   0x004c26                  _udb_gps_set_rate
                   0x004c6e                  _udb_gps_start_sending_data
-                  0x005b8c                  _udb_init
+                  0x005baa                  _udb_init
                   0x004dda                  _udb_init_ADC
                   0x004bf4                  _udb_init_GPS
                   0x004ce6                  _udb_init_USART
                   0x0042f4                  _udb_init_capture
                   0x0049f4                  _udb_init_clock
-                  0x005bb4                  _udb_init_leds
+                  0x005bd2                  _udb_init_leds
                   0x004f8e                  _udb_init_pwm
-                  0x005bae                  _udb_run
+                  0x005bcc                  _udb_run
                   0x0052ba                  _udb_serial_callback_get_byte_to_send
                   0x00514e                  _udb_serial_callback_received_byte
                   0x004d36                  _udb_serial_check_rate
                   0x004d1a                  _udb_serial_set_rate
                   0x004d62                  _udb_serial_start_sending_data
-                  0x0057dc                  _udb_servo_callback_prepare_outputs
-                  0x005c06                  _udb_servo_pulsesat
-                  0x005bde                  _udb_servo_record_trims
+                  0x0057fa                  _udb_servo_callback_prepare_outputs
+                  0x005c24                  _udb_servo_pulsesat
+                  0x005bfc                  _udb_servo_record_trims
                   0x004fce                  _udb_set_action_state
-                  0x0054f6                  _updateBehavior
-                  0x0055ba                  _updateTriggerAction
+                  0x005354                  _updateBehavior
+                  0x005436                  _updateTriggerAction
                   0x002ca6                  _use_fixed_origin
                   0x002b58                  _vector2_mag
                   0x002b78                  _vector3_mag
@@ -1136,7 +1136,7 @@ External Symbols in Program Memory (by name):
                   0x0032e8                  _wind_gain_adjustment
                   0x0020b6                  _wp_inject_byte_order
                   0x002ba4                  _wp_to_relative
-                  0x0058b4                  _yawCntrl
+                  0x0058d2                  _yawCntrl
                   0x002518                  _yaw_drift
                   0x0020d4                  _yaw_offset_centred_pwm
                   0x0020ce                  _yaw_servo_high_ratio
@@ -1457,132 +1457,132 @@ userdata
  *(.debug_aranges)
 
 .ivt              0x000004         0x7c
-                  0x000004          0x4 LONG 0x5d50 DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
-                  0x000006          0x4 LONG 0x5d48 DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
-                  0x000008          0x4 LONG 0x5d44 DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
-                  0x00000a          0x4 LONG 0x5d40 DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
-                  0x00000c          0x4 LONG 0x5d3c DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
-                  0x00000e          0x4 LONG 0x5d50 DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
-                  0x000010          0x4 LONG 0x5d50 DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
-                  0x000012          0x4 LONG 0x5d50 DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
+                  0x000004          0x4 LONG 0x5d6e DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
+                  0x000006          0x4 LONG 0x5d66 DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
+                  0x000008          0x4 LONG 0x5d62 DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
+                  0x00000a          0x4 LONG 0x5d5e DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
+                  0x00000c          0x4 LONG 0x5d5a DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
+                  0x00000e          0x4 LONG 0x5d6e DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
+                  0x000010          0x4 LONG 0x5d6e DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
+                  0x000012          0x4 LONG 0x5d6e DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
                   0x000014          0x4 LONG 0x451e DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000016          0x4 LONG 0x44dc DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000018          0x4 LONG 0x5d50 DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000018          0x4 LONG 0x5d6e DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00001a          0x4 LONG 0x4ad8 DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00001c          0x4 LONG 0x449a DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00001e          0x4 LONG 0x5d50 DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000020          0x4 LONG 0x5d50 DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00001e          0x4 LONG 0x5d6e DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000020          0x4 LONG 0x5d6e DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000022          0x4 LONG 0x4b42 DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000024          0x4 LONG 0x5d50 DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000024          0x4 LONG 0x5d6e DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000026          0x4 LONG 0x4d6a DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000028          0x4 LONG 0x4da4 DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x4e42 DEFINED (__ADCInterrupt)?ABSOLUTE (__ADCInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002c          0x4 LONG 0x5d50 DEFINED (__NVMInterrupt)?ABSOLUTE (__NVMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002e          0x4 LONG 0x5d50 DEFINED (__SI2CInterrupt)?ABSOLUTE (__SI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000030          0x4 LONG 0x5d50 DEFINED (__MI2CInterrupt)?ABSOLUTE (__MI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000032          0x4 LONG 0x5d50 DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000034          0x4 LONG 0x5d50 DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002c          0x4 LONG 0x5d6e DEFINED (__NVMInterrupt)?ABSOLUTE (__NVMInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x5d6e DEFINED (__SI2CInterrupt)?ABSOLUTE (__SI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000030          0x4 LONG 0x5d6e DEFINED (__MI2CInterrupt)?ABSOLUTE (__MI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000032          0x4 LONG 0x5d6e DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000034          0x4 LONG 0x5d6e DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000036          0x4 LONG 0x43f6 DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x4458 DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003a          0x4 LONG 0x5d50 DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003c          0x4 LONG 0x5d50 DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003a          0x4 LONG 0x5d6e DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003c          0x4 LONG 0x5d6e DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003e          0x4 LONG 0x5006 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x4b7c DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000042          0x4 LONG 0x5d50 DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000042          0x4 LONG 0x5d6e DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000044          0x4 LONG 0x4c76 DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000046          0x4 LONG 0x4cb0 DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000048          0x4 LONG 0x5d50 DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004a          0x4 LONG 0x5d50 DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004c          0x4 LONG 0x5d50 DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004e          0x4 LONG 0x5d50 DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000050          0x4 LONG 0x5d50 DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000052          0x4 LONG 0x5d50 DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000054          0x4 LONG 0x5d50 DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000056          0x4 LONG 0x5d50 DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000058          0x4 LONG 0x5d50 DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005a          0x4 LONG 0x5d50 DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005c          0x4 LONG 0x5d50 DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005e          0x4 LONG 0x5d50 DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000060          0x4 LONG 0x5d50 DEFINED (__C2Interrupt)?ABSOLUTE (__C2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000048          0x4 LONG 0x5d6e DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004a          0x4 LONG 0x5d6e DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004c          0x4 LONG 0x5d6e DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004e          0x4 LONG 0x5d6e DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000050          0x4 LONG 0x5d6e DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000052          0x4 LONG 0x5d6e DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000054          0x4 LONG 0x5d6e DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000056          0x4 LONG 0x5d6e DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000058          0x4 LONG 0x5d6e DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005a          0x4 LONG 0x5d6e DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005c          0x4 LONG 0x5d6e DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005e          0x4 LONG 0x5d6e DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000060          0x4 LONG 0x5d6e DEFINED (__C2Interrupt)?ABSOLUTE (__C2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000062          0x4 LONG 0x4b9a DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000064          0x4 LONG 0x5d50 DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000066          0x4 LONG 0x5d50 DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000068          0x4 LONG 0x5d50 DEFINED (__LVDInterrupt)?ABSOLUTE (__LVDInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00006a          0x4 LONG 0x5d50 DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00006c          0x4 LONG 0x5d50 DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00006e          0x4 LONG 0x5d50 DEFINED (__Interrupt45)?ABSOLUTE (__Interrupt45):ABSOLUTE (__DefaultInterrupt)
-                  0x000070          0x4 LONG 0x5d50 DEFINED (__Interrupt46)?ABSOLUTE (__Interrupt46):ABSOLUTE (__DefaultInterrupt)
-                  0x000072          0x4 LONG 0x5d50 DEFINED (__Interrupt47)?ABSOLUTE (__Interrupt47):ABSOLUTE (__DefaultInterrupt)
-                  0x000074          0x4 LONG 0x5d50 DEFINED (__Interrupt48)?ABSOLUTE (__Interrupt48):ABSOLUTE (__DefaultInterrupt)
-                  0x000076          0x4 LONG 0x5d50 DEFINED (__Interrupt49)?ABSOLUTE (__Interrupt49):ABSOLUTE (__DefaultInterrupt)
-                  0x000078          0x4 LONG 0x5d50 DEFINED (__Interrupt50)?ABSOLUTE (__Interrupt50):ABSOLUTE (__DefaultInterrupt)
-                  0x00007a          0x4 LONG 0x5d50 DEFINED (__Interrupt51)?ABSOLUTE (__Interrupt51):ABSOLUTE (__DefaultInterrupt)
-                  0x00007c          0x4 LONG 0x5d50 DEFINED (__Interrupt52)?ABSOLUTE (__Interrupt52):ABSOLUTE (__DefaultInterrupt)
-                  0x00007e          0x4 LONG 0x5d50 DEFINED (__Interrupt53)?ABSOLUTE (__Interrupt53):ABSOLUTE (__DefaultInterrupt)
+                  0x000064          0x4 LONG 0x5d6e DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000066          0x4 LONG 0x5d6e DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000068          0x4 LONG 0x5d6e DEFINED (__LVDInterrupt)?ABSOLUTE (__LVDInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00006a          0x4 LONG 0x5d6e DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00006c          0x4 LONG 0x5d6e DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00006e          0x4 LONG 0x5d6e DEFINED (__Interrupt45)?ABSOLUTE (__Interrupt45):ABSOLUTE (__DefaultInterrupt)
+                  0x000070          0x4 LONG 0x5d6e DEFINED (__Interrupt46)?ABSOLUTE (__Interrupt46):ABSOLUTE (__DefaultInterrupt)
+                  0x000072          0x4 LONG 0x5d6e DEFINED (__Interrupt47)?ABSOLUTE (__Interrupt47):ABSOLUTE (__DefaultInterrupt)
+                  0x000074          0x4 LONG 0x5d6e DEFINED (__Interrupt48)?ABSOLUTE (__Interrupt48):ABSOLUTE (__DefaultInterrupt)
+                  0x000076          0x4 LONG 0x5d6e DEFINED (__Interrupt49)?ABSOLUTE (__Interrupt49):ABSOLUTE (__DefaultInterrupt)
+                  0x000078          0x4 LONG 0x5d6e DEFINED (__Interrupt50)?ABSOLUTE (__Interrupt50):ABSOLUTE (__DefaultInterrupt)
+                  0x00007a          0x4 LONG 0x5d6e DEFINED (__Interrupt51)?ABSOLUTE (__Interrupt51):ABSOLUTE (__DefaultInterrupt)
+                  0x00007c          0x4 LONG 0x5d6e DEFINED (__Interrupt52)?ABSOLUTE (__Interrupt52):ABSOLUTE (__DefaultInterrupt)
+                  0x00007e          0x4 LONG 0x5d6e DEFINED (__Interrupt53)?ABSOLUTE (__Interrupt53):ABSOLUTE (__DefaultInterrupt)
 
 .aivt             0x000084         0x7c
-                  0x000084          0x4 LONG 0x5d50 DEFINED (__AltReservedTrap0)?ABSOLUTE (__AltReservedTrap0):DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
-                  0x000086          0x4 LONG 0x5d48 DEFINED (__AltOscillatorFail)?ABSOLUTE (__AltOscillatorFail):DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
-                  0x000088          0x4 LONG 0x5d44 DEFINED (__AltAddressError)?ABSOLUTE (__AltAddressError):DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
-                  0x00008a          0x4 LONG 0x5d40 DEFINED (__AltStackError)?ABSOLUTE (__AltStackError):DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
-                  0x00008c          0x4 LONG 0x5d3c DEFINED (__AltMathError)?ABSOLUTE (__AltMathError):DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
-                  0x00008e          0x4 LONG 0x5d50 DEFINED (__AltReservedTrap5)?ABSOLUTE (__AltReservedTrap5):DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
-                  0x000090          0x4 LONG 0x5d50 DEFINED (__AltReservedTrap6)?ABSOLUTE (__AltReservedTrap6):DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
-                  0x000092          0x4 LONG 0x5d50 DEFINED (__AltReservedTrap7)?ABSOLUTE (__AltReservedTrap7):DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
+                  0x000084          0x4 LONG 0x5d6e DEFINED (__AltReservedTrap0)?ABSOLUTE (__AltReservedTrap0):DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
+                  0x000086          0x4 LONG 0x5d66 DEFINED (__AltOscillatorFail)?ABSOLUTE (__AltOscillatorFail):DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
+                  0x000088          0x4 LONG 0x5d62 DEFINED (__AltAddressError)?ABSOLUTE (__AltAddressError):DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
+                  0x00008a          0x4 LONG 0x5d5e DEFINED (__AltStackError)?ABSOLUTE (__AltStackError):DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
+                  0x00008c          0x4 LONG 0x5d5a DEFINED (__AltMathError)?ABSOLUTE (__AltMathError):DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
+                  0x00008e          0x4 LONG 0x5d6e DEFINED (__AltReservedTrap5)?ABSOLUTE (__AltReservedTrap5):DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
+                  0x000090          0x4 LONG 0x5d6e DEFINED (__AltReservedTrap6)?ABSOLUTE (__AltReservedTrap6):DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
+                  0x000092          0x4 LONG 0x5d6e DEFINED (__AltReservedTrap7)?ABSOLUTE (__AltReservedTrap7):DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
                   0x000094          0x4 LONG 0x451e DEFINED (__AltINT0Interrupt)?ABSOLUTE (__AltINT0Interrupt):DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000096          0x4 LONG 0x44dc DEFINED (__AltIC1Interrupt)?ABSOLUTE (__AltIC1Interrupt):DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000098          0x4 LONG 0x5d50 DEFINED (__AltOC1Interrupt)?ABSOLUTE (__AltOC1Interrupt):DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000098          0x4 LONG 0x5d6e DEFINED (__AltOC1Interrupt)?ABSOLUTE (__AltOC1Interrupt):DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00009a          0x4 LONG 0x4ad8 DEFINED (__AltT1Interrupt)?ABSOLUTE (__AltT1Interrupt):DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00009c          0x4 LONG 0x449a DEFINED (__AltIC2Interrupt)?ABSOLUTE (__AltIC2Interrupt):DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00009e          0x4 LONG 0x5d50 DEFINED (__AltOC2Interrupt)?ABSOLUTE (__AltOC2Interrupt):DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000a0          0x4 LONG 0x5d50 DEFINED (__AltT2Interrupt)?ABSOLUTE (__AltT2Interrupt):DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00009e          0x4 LONG 0x5d6e DEFINED (__AltOC2Interrupt)?ABSOLUTE (__AltOC2Interrupt):DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000a0          0x4 LONG 0x5d6e DEFINED (__AltT2Interrupt)?ABSOLUTE (__AltT2Interrupt):DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a2          0x4 LONG 0x4b42 DEFINED (__AltT3Interrupt)?ABSOLUTE (__AltT3Interrupt):DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000a4          0x4 LONG 0x5d50 DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000a4          0x4 LONG 0x5d6e DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a6          0x4 LONG 0x4d6a DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a8          0x4 LONG 0x4da4 DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000aa          0x4 LONG 0x4e42 DEFINED (__AltADCInterrupt)?ABSOLUTE (__AltADCInterrupt):DEFINED (__ADCInterrupt)?ABSOLUTE (__ADCInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ac          0x4 LONG 0x5d50 DEFINED (__AltNVMInterrupt)?ABSOLUTE (__AltNVMInterrupt):DEFINED (__NVMInterrupt)?ABSOLUTE (__NVMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ae          0x4 LONG 0x5d50 DEFINED (__AltSI2CInterrupt)?ABSOLUTE (__AltSI2CInterrupt):DEFINED (__SI2CInterrupt)?ABSOLUTE (__SI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000b0          0x4 LONG 0x5d50 DEFINED (__AltMI2CInterrupt)?ABSOLUTE (__AltMI2CInterrupt):DEFINED (__MI2CInterrupt)?ABSOLUTE (__MI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000b2          0x4 LONG 0x5d50 DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000b4          0x4 LONG 0x5d50 DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ac          0x4 LONG 0x5d6e DEFINED (__AltNVMInterrupt)?ABSOLUTE (__AltNVMInterrupt):DEFINED (__NVMInterrupt)?ABSOLUTE (__NVMInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ae          0x4 LONG 0x5d6e DEFINED (__AltSI2CInterrupt)?ABSOLUTE (__AltSI2CInterrupt):DEFINED (__SI2CInterrupt)?ABSOLUTE (__SI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000b0          0x4 LONG 0x5d6e DEFINED (__AltMI2CInterrupt)?ABSOLUTE (__AltMI2CInterrupt):DEFINED (__MI2CInterrupt)?ABSOLUTE (__MI2CInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000b2          0x4 LONG 0x5d6e DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000b4          0x4 LONG 0x5d6e DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000b6          0x4 LONG 0x43f6 DEFINED (__AltIC7Interrupt)?ABSOLUTE (__AltIC7Interrupt):DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000b8          0x4 LONG 0x4458 DEFINED (__AltIC8Interrupt)?ABSOLUTE (__AltIC8Interrupt):DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ba          0x4 LONG 0x5d50 DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000bc          0x4 LONG 0x5d50 DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ba          0x4 LONG 0x5d6e DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000bc          0x4 LONG 0x5d6e DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000be          0x4 LONG 0x5006 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c0          0x4 LONG 0x4b7c DEFINED (__AltT5Interrupt)?ABSOLUTE (__AltT5Interrupt):DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000c2          0x4 LONG 0x5d50 DEFINED (__AltINT2Interrupt)?ABSOLUTE (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000c2          0x4 LONG 0x5d6e DEFINED (__AltINT2Interrupt)?ABSOLUTE (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c4          0x4 LONG 0x4c76 DEFINED (__AltU2RXInterrupt)?ABSOLUTE (__AltU2RXInterrupt):DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c6          0x4 LONG 0x4cb0 DEFINED (__AltU2TXInterrupt)?ABSOLUTE (__AltU2TXInterrupt):DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000c8          0x4 LONG 0x5d50 DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ca          0x4 LONG 0x5d50 DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000cc          0x4 LONG 0x5d50 DEFINED (__AltIC3Interrupt)?ABSOLUTE (__AltIC3Interrupt):DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ce          0x4 LONG 0x5d50 DEFINED (__AltIC4Interrupt)?ABSOLUTE (__AltIC4Interrupt):DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000d0          0x4 LONG 0x5d50 DEFINED (__AltIC5Interrupt)?ABSOLUTE (__AltIC5Interrupt):DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000d2          0x4 LONG 0x5d50 DEFINED (__AltIC6Interrupt)?ABSOLUTE (__AltIC6Interrupt):DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000d4          0x4 LONG 0x5d50 DEFINED (__AltOC5Interrupt)?ABSOLUTE (__AltOC5Interrupt):DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000d6          0x4 LONG 0x5d50 DEFINED (__AltOC6Interrupt)?ABSOLUTE (__AltOC6Interrupt):DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000d8          0x4 LONG 0x5d50 DEFINED (__AltOC7Interrupt)?ABSOLUTE (__AltOC7Interrupt):DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000da          0x4 LONG 0x5d50 DEFINED (__AltOC8Interrupt)?ABSOLUTE (__AltOC8Interrupt):DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000dc          0x4 LONG 0x5d50 DEFINED (__AltINT3Interrupt)?ABSOLUTE (__AltINT3Interrupt):DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000de          0x4 LONG 0x5d50 DEFINED (__AltINT4Interrupt)?ABSOLUTE (__AltINT4Interrupt):DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000e0          0x4 LONG 0x5d50 DEFINED (__AltC2Interrupt)?ABSOLUTE (__AltC2Interrupt):DEFINED (__C2Interrupt)?ABSOLUTE (__C2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000c8          0x4 LONG 0x5d6e DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ca          0x4 LONG 0x5d6e DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000cc          0x4 LONG 0x5d6e DEFINED (__AltIC3Interrupt)?ABSOLUTE (__AltIC3Interrupt):DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ce          0x4 LONG 0x5d6e DEFINED (__AltIC4Interrupt)?ABSOLUTE (__AltIC4Interrupt):DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000d0          0x4 LONG 0x5d6e DEFINED (__AltIC5Interrupt)?ABSOLUTE (__AltIC5Interrupt):DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000d2          0x4 LONG 0x5d6e DEFINED (__AltIC6Interrupt)?ABSOLUTE (__AltIC6Interrupt):DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000d4          0x4 LONG 0x5d6e DEFINED (__AltOC5Interrupt)?ABSOLUTE (__AltOC5Interrupt):DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000d6          0x4 LONG 0x5d6e DEFINED (__AltOC6Interrupt)?ABSOLUTE (__AltOC6Interrupt):DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000d8          0x4 LONG 0x5d6e DEFINED (__AltOC7Interrupt)?ABSOLUTE (__AltOC7Interrupt):DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000da          0x4 LONG 0x5d6e DEFINED (__AltOC8Interrupt)?ABSOLUTE (__AltOC8Interrupt):DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000dc          0x4 LONG 0x5d6e DEFINED (__AltINT3Interrupt)?ABSOLUTE (__AltINT3Interrupt):DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000de          0x4 LONG 0x5d6e DEFINED (__AltINT4Interrupt)?ABSOLUTE (__AltINT4Interrupt):DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000e0          0x4 LONG 0x5d6e DEFINED (__AltC2Interrupt)?ABSOLUTE (__AltC2Interrupt):DEFINED (__C2Interrupt)?ABSOLUTE (__C2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000e2          0x4 LONG 0x4b9a DEFINED (__AltPWMInterrupt)?ABSOLUTE (__AltPWMInterrupt):DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000e4          0x4 LONG 0x5d50 DEFINED (__AltQEIInterrupt)?ABSOLUTE (__AltQEIInterrupt):DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000e6          0x4 LONG 0x5d50 DEFINED (__AltDCIInterrupt)?ABSOLUTE (__AltDCIInterrupt):DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000e8          0x4 LONG 0x5d50 DEFINED (__AltLVDInterrupt)?ABSOLUTE (__AltLVDInterrupt):DEFINED (__LVDInterrupt)?ABSOLUTE (__LVDInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ea          0x4 LONG 0x5d50 DEFINED (__AltFLTAInterrupt)?ABSOLUTE (__AltFLTAInterrupt):DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ec          0x4 LONG 0x5d50 DEFINED (__AltFLTBInterrupt)?ABSOLUTE (__AltFLTBInterrupt):DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000ee          0x4 LONG 0x5d50 DEFINED (__AltInterrupt45)?ABSOLUTE (__AltInterrupt45):DEFINED (__Interrupt45)?ABSOLUTE (__Interrupt45):ABSOLUTE (__DefaultInterrupt)
-                  0x0000f0          0x4 LONG 0x5d50 DEFINED (__AltInterrupt46)?ABSOLUTE (__AltInterrupt46):DEFINED (__Interrupt46)?ABSOLUTE (__Interrupt46):ABSOLUTE (__DefaultInterrupt)
-                  0x0000f2          0x4 LONG 0x5d50 DEFINED (__AltInterrupt47)?ABSOLUTE (__AltInterrupt47):DEFINED (__Interrupt47)?ABSOLUTE (__Interrupt47):ABSOLUTE (__DefaultInterrupt)
-                  0x0000f4          0x4 LONG 0x5d50 DEFINED (__AltInterrupt48)?ABSOLUTE (__AltInterrupt48):DEFINED (__Interrupt48)?ABSOLUTE (__Interrupt48):ABSOLUTE (__DefaultInterrupt)
-                  0x0000f6          0x4 LONG 0x5d50 DEFINED (__AltInterrupt49)?ABSOLUTE (__AltInterrupt49):DEFINED (__Interrupt49)?ABSOLUTE (__Interrupt49):ABSOLUTE (__DefaultInterrupt)
-                  0x0000f8          0x4 LONG 0x5d50 DEFINED (__AltInterrupt50)?ABSOLUTE (__AltInterrupt50):DEFINED (__Interrupt50)?ABSOLUTE (__Interrupt50):ABSOLUTE (__DefaultInterrupt)
-                  0x0000fa          0x4 LONG 0x5d50 DEFINED (__AltInterrupt51)?ABSOLUTE (__AltInterrupt51):DEFINED (__Interrupt51)?ABSOLUTE (__Interrupt51):ABSOLUTE (__DefaultInterrupt)
-                  0x0000fc          0x4 LONG 0x5d50 DEFINED (__AltInterrupt52)?ABSOLUTE (__AltInterrupt52):DEFINED (__Interrupt52)?ABSOLUTE (__Interrupt52):ABSOLUTE (__DefaultInterrupt)
-                  0x0000fe          0x4 LONG 0x5d50 DEFINED (__AltInterrupt53)?ABSOLUTE (__AltInterrupt53):DEFINED (__Interrupt53)?ABSOLUTE (__Interrupt53):ABSOLUTE (__DefaultInterrupt)
+                  0x0000e4          0x4 LONG 0x5d6e DEFINED (__AltQEIInterrupt)?ABSOLUTE (__AltQEIInterrupt):DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000e6          0x4 LONG 0x5d6e DEFINED (__AltDCIInterrupt)?ABSOLUTE (__AltDCIInterrupt):DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000e8          0x4 LONG 0x5d6e DEFINED (__AltLVDInterrupt)?ABSOLUTE (__AltLVDInterrupt):DEFINED (__LVDInterrupt)?ABSOLUTE (__LVDInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ea          0x4 LONG 0x5d6e DEFINED (__AltFLTAInterrupt)?ABSOLUTE (__AltFLTAInterrupt):DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ec          0x4 LONG 0x5d6e DEFINED (__AltFLTBInterrupt)?ABSOLUTE (__AltFLTBInterrupt):DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000ee          0x4 LONG 0x5d6e DEFINED (__AltInterrupt45)?ABSOLUTE (__AltInterrupt45):DEFINED (__Interrupt45)?ABSOLUTE (__Interrupt45):ABSOLUTE (__DefaultInterrupt)
+                  0x0000f0          0x4 LONG 0x5d6e DEFINED (__AltInterrupt46)?ABSOLUTE (__AltInterrupt46):DEFINED (__Interrupt46)?ABSOLUTE (__Interrupt46):ABSOLUTE (__DefaultInterrupt)
+                  0x0000f2          0x4 LONG 0x5d6e DEFINED (__AltInterrupt47)?ABSOLUTE (__AltInterrupt47):DEFINED (__Interrupt47)?ABSOLUTE (__Interrupt47):ABSOLUTE (__DefaultInterrupt)
+                  0x0000f4          0x4 LONG 0x5d6e DEFINED (__AltInterrupt48)?ABSOLUTE (__AltInterrupt48):DEFINED (__Interrupt48)?ABSOLUTE (__Interrupt48):ABSOLUTE (__DefaultInterrupt)
+                  0x0000f6          0x4 LONG 0x5d6e DEFINED (__AltInterrupt49)?ABSOLUTE (__AltInterrupt49):DEFINED (__Interrupt49)?ABSOLUTE (__Interrupt49):ABSOLUTE (__DefaultInterrupt)
+                  0x0000f8          0x4 LONG 0x5d6e DEFINED (__AltInterrupt50)?ABSOLUTE (__AltInterrupt50):DEFINED (__Interrupt50)?ABSOLUTE (__Interrupt50):ABSOLUTE (__DefaultInterrupt)
+                  0x0000fa          0x4 LONG 0x5d6e DEFINED (__AltInterrupt51)?ABSOLUTE (__AltInterrupt51):DEFINED (__Interrupt51)?ABSOLUTE (__Interrupt51):ABSOLUTE (__DefaultInterrupt)
+                  0x0000fc          0x4 LONG 0x5d6e DEFINED (__AltInterrupt52)?ABSOLUTE (__AltInterrupt52):DEFINED (__Interrupt52)?ABSOLUTE (__Interrupt52):ABSOLUTE (__DefaultInterrupt)
+                  0x0000fe          0x4 LONG 0x5d6e DEFINED (__AltInterrupt53)?ABSOLUTE (__AltInterrupt53):DEFINED (__Interrupt53)?ABSOLUTE (__Interrupt53):ABSOLUTE (__DefaultInterrupt)
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -2672,9 +2672,9 @@ __c30_signature
                     0x0b4a                  flags
                     0x0b4c                  old_rtl_flags
 
-_036b86904f00cb39
+_037f86904f027b07
                     0x0b4e          0x4
- _036b86904f00cb39
+ _037f86904f027b07
                     0x0b4e          0x4 build\udb\telemetry.o
                     0x0b4e                  trap_source
 
@@ -2695,15 +2695,15 @@ _036b86904f00cb39
  .nbss              0x0b5c          0x2 build\udb\libUDB.o
                     0x0b5c                  udb_flags
 
-_036b85b04f00cb39
+_037f85b04f027b07
                     0x0b5e          0x2
- _036b85b04f00cb39
+ _037f85b04f027b07
                     0x0b5e          0x2 build\udb\telemetry.o
                     0x0b5e                  trap_flags
 
-_036b87004f00cb39
+_037f87004f027b07
                     0x0b60          0x2
- _036b87004f00cb39
+ _037f87004f027b07
                     0x0b60          0x2 build\udb\telemetry.o
                     0x0b60                  osc_fail_count
 
@@ -2883,7 +2883,7 @@ _036b87004f00cb39
 .dinit            0x004554        0x25c
  .dinit           0x004554        0x25c data_init
 
-.text             0x0047b0       0x15cc
+.text             0x0047b0       0x15ea
  .text            0x0047b0        0x244 build\udb\estWind.o
                   0x0047b0                  estimateWind
  .text            0x0049f4        0x200 build\udb\background.o
@@ -2927,72 +2927,72 @@ _036b87004f00cb39
                   0x00527c                  serial_output
                   0x0052ba                  udb_serial_callback_get_byte_to_send
                   0x0052e6                  serial_output_8hz
- .text            0x0052ec        0x1a2 build\udb\pitchCntrl.o
-                  0x0052ec                  pitchCntrl
-                  0x005306                  normalPitchCntrl
-                  0x005428                  hoverPitchCntrl
- .text            0x00548e        0x186 build\udb\behavior.o
-                  0x00548e                  init_behavior
-                  0x0054a0                  setBehavior
-                  0x0054c6                  canStabilizeInverted
-                  0x0054ce                  canStabilizeHover
-                  0x0054f6                  updateBehavior
-                  0x0055ba                  updateTriggerAction
-                  0x005608                  triggerActionSetValue
- .text            0x005614        0x184 build\udb\gpsParseSTD.o
-                  0x005614                  gps_nav_valid
-                  0x00562a                  gps_startup_sequence
-                  0x005666                  msg_B3
-                  0x005678                  msg_A0
-                  0x005694                  msg_A2
-                  0x0056a4                  msg_PL1
-                  0x0056ba                  msg_PL2
-                  0x0056e4                  msg_MSG41
-                  0x00571c                  msg_MSGU
-                  0x005742                  msg_B0
-                  0x00575a                  commit_gps_data
- .text            0x005798        0x11c build\udb\libDCM.o
-                  0x005798                  dcm_init
-                  0x0057a6                  dcm_run_init_step
-                  0x0057d2                  udb_callback_read_sensors
-                  0x0057dc                  udb_servo_callback_prepare_outputs
-                  0x0057fc                  dcm_calibrate
-                  0x00580e                  dcm_set_origin_location
-                  0x00584a                  dcm_absolute_to_relative
- .text            0x0058b4        0x116 build\udb\yawCntrl.o
-                  0x0058b4                  yawCntrl
-                  0x0058cc                  normalYawCntrl
-                  0x005994                  hoverYawCntrl
- .text            0x0059ca         0xe8 build\udb\rollCntrl.o
-                  0x0059ca                  rollCntrl
-                  0x0059e2                  normalRollCntrl
-                  0x005a60                  hoverRollCntrl
- .text            0x005ab2         0xda build\udb\servoPrepare.o
-                  0x005ab2                  init_servoPrepare
-                  0x005b30                  dcm_servo_callback_prepare_outputs
-                  0x005b74                  manualPassthrough
- .text            0x005b8c         0xaa build\udb\libUDB.o
-                  0x005b8c                  udb_init
-                  0x005bae                  udb_run
-                  0x005bb4                  udb_init_leds
-                  0x005bbc                  udb_a2d_record_offsets
-                  0x005bde                  udb_servo_record_trims
-                  0x005c06                  udb_servo_pulsesat
-                  0x005c30                  calculate_analog_sensor_values
- .text            0x005c36         0x90 build\udb\cameraCntrl.o
-                  0x005c36                  cam_pitchServoLimit
-                  0x005c60                  cam_yawServoLimit
-                  0x005c8a                  set_camera_view
-                  0x005ca2                  compute_camera_view
-                  0x005cc0                  cameraCntrl
- .text            0x005cc6         0x76 build\udb\estYawDrift.o
-                  0x005cc6                  dcm_enable_yaw_drift_correction
-                  0x005cec                  estYawDrift
- .text            0x005d3c         0x2a build\udb\traps_udb_asm.o
-                  0x005d3c                  _MathError
-                  0x005d40                  _StackError
-                  0x005d44                  _AddressError
-                  0x005d48                  _OscillatorFail
-                  0x005d50                  _DefaultInterrupt
- .text            0x005d66         0x16 build\udb\main.o
-                  0x005d66                  main
+ .text            0x0052ec        0x1a4 build\udb\behavior.o
+                  0x0052ec                  init_behavior
+                  0x0052fe                  setBehavior
+                  0x005324                  canStabilizeInverted
+                  0x00532c                  canStabilizeHover
+                  0x005354                  updateBehavior
+                  0x005436                  updateTriggerAction
+                  0x005484                  triggerActionSetValue
+ .text            0x005490        0x1a2 build\udb\pitchCntrl.o
+                  0x005490                  pitchCntrl
+                  0x0054aa                  normalPitchCntrl
+                  0x0055cc                  hoverPitchCntrl
+ .text            0x005632        0x184 build\udb\gpsParseSTD.o
+                  0x005632                  gps_nav_valid
+                  0x005648                  gps_startup_sequence
+                  0x005684                  msg_B3
+                  0x005696                  msg_A0
+                  0x0056b2                  msg_A2
+                  0x0056c2                  msg_PL1
+                  0x0056d8                  msg_PL2
+                  0x005702                  msg_MSG41
+                  0x00573a                  msg_MSGU
+                  0x005760                  msg_B0
+                  0x005778                  commit_gps_data
+ .text            0x0057b6        0x11c build\udb\libDCM.o
+                  0x0057b6                  dcm_init
+                  0x0057c4                  dcm_run_init_step
+                  0x0057f0                  udb_callback_read_sensors
+                  0x0057fa                  udb_servo_callback_prepare_outputs
+                  0x00581a                  dcm_calibrate
+                  0x00582c                  dcm_set_origin_location
+                  0x005868                  dcm_absolute_to_relative
+ .text            0x0058d2        0x116 build\udb\yawCntrl.o
+                  0x0058d2                  yawCntrl
+                  0x0058ea                  normalYawCntrl
+                  0x0059b2                  hoverYawCntrl
+ .text            0x0059e8         0xe8 build\udb\rollCntrl.o
+                  0x0059e8                  rollCntrl
+                  0x005a00                  normalRollCntrl
+                  0x005a7e                  hoverRollCntrl
+ .text            0x005ad0         0xda build\udb\servoPrepare.o
+                  0x005ad0                  init_servoPrepare
+                  0x005b4e                  dcm_servo_callback_prepare_outputs
+                  0x005b92                  manualPassthrough
+ .text            0x005baa         0xaa build\udb\libUDB.o
+                  0x005baa                  udb_init
+                  0x005bcc                  udb_run
+                  0x005bd2                  udb_init_leds
+                  0x005bda                  udb_a2d_record_offsets
+                  0x005bfc                  udb_servo_record_trims
+                  0x005c24                  udb_servo_pulsesat
+                  0x005c4e                  calculate_analog_sensor_values
+ .text            0x005c54         0x90 build\udb\cameraCntrl.o
+                  0x005c54                  cam_pitchServoLimit
+                  0x005c7e                  cam_yawServoLimit
+                  0x005ca8                  set_camera_view
+                  0x005cc0                  compute_camera_view
+                  0x005cde                  cameraCntrl
+ .text            0x005ce4         0x76 build\udb\estYawDrift.o
+                  0x005ce4                  dcm_enable_yaw_drift_correction
+                  0x005d0a                  estYawDrift
+ .text            0x005d5a         0x2a build\udb\traps_udb_asm.o
+                  0x005d5a                  _MathError
+                  0x005d5e                  _StackError
+                  0x005d62                  _AddressError
+                  0x005d66                  _OscillatorFail
+                  0x005d6e                  _DefaultInterrupt
+ .text            0x005d84         0x16 build\udb\main.o
+                  0x005d84                  main
