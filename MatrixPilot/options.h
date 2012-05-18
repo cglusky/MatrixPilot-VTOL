@@ -1,4 +1,4 @@
-// This file is part of MatrixPilot.
+// This file is part of MatrixPilot.  Mercury
 //
 //    http://code.google.com/p/gentlenav/
 //
@@ -110,7 +110,7 @@
 // altitude is determined by the position of the throttle stick on the transmitter.
 // NOTE: even when set to AH_NONE, MatrixPilot will still try to stabilize pitch as long
 // as PITCH_STABILIZATION is set to 1 above, but will not aim for any specific altitude.
-#define ALTITUDEHOLD_STABILIZED				AH_NONE
+#define ALTITUDEHOLD_STABILIZED				AH_NONE //***TODO Test for VTOL
 #define ALTITUDEHOLD_WAYPOINT				AH_FULL
 
 // Speed Control
@@ -122,7 +122,7 @@
 
 // Inverted flight
 // Set these to 1 to enable stabilization of inverted flight in stabilized and/or waypoint modes.
-#define INVERTED_FLIGHT_STABILIZED_MODE		0 //***TODO Test for VTOL
+#define INVERTED_FLIGHT_STABILIZED_MODE		1 //***TODO Test for VTOL
 #define INVERTED_FLIGHT_WAYPOINT_MODE		0
 
 // Hovering
@@ -248,7 +248,7 @@
 // Set this to 1 if you need to switch the left and right elevon or vtail surfaces
 #define ELEVON_VTAIL_SURFACES_REVERSED		0
 // Set this to 1 if you need to switch the Ruddervon VTOL surfaces
-#define RUDDERON_VTOL_SURFACES_REVERSED		0
+#define RUDDERON_VTOL_SURFACES_REVERSED		0 
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -425,8 +425,8 @@
 // YAWKP_AILERON is the proportional feedback gain for ailerons in response to yaw error
 // YAWKD_AILERON is the derivative feedback gain for ailerons in response to yaw rotation
 // AILERON_BOOST is the additional gain multiplier for the manually commanded aileron deflection
-#define ROLLKP								1.0 	//0.20
-#define ROLLKD								0.5		//0.05
+#define ROLLKP								0.20
+#define ROLLKD								0.05
 #define YAWKP_AILERON						0.0		//0.10 0.0 for VTOL
 #define YAWKD_AILERON						0.0		//0.05 0.0 for VTOL
 #define AILERON_BOOST						1.00
@@ -437,15 +437,15 @@
 // RUDDER_ELEV_MIX is the degree of elevator adjustment for rudder and banking
 // AILERON_ELEV_MIX is the degree of elevator adjustment for aileron
 // ELEVATOR_BOOST is the additional gain multiplier for the manually commanded elevator deflection
-#define PITCHGAIN							1.0		//0.10 ***TODO Why is this not PITCHKP?
-#define PITCHKD								0.5		//0.04
-#define RUDDER_ELEV_MIX						0.0		//0.20
-#define ROLL_ELEV_MIX						0.0		//0.05
+#define PITCHGAIN							0.10 	//***TODO Why is this not PITCHKP?
+#define PITCHKD								0.04
+#define RUDDER_ELEV_MIX						0.0		//0.20 0.0 for VTOL
+#define ROLL_ELEV_MIX						0.0	    //0.05 0.0 for VTOL
 #define ELEVATOR_BOOST						1.0		//0.50
 
 // Neutral pitch angle of the plane (in degrees) when flying inverted
 // Use this to add extra "up" elevator while the plane is inverted, to avoid losing altitude.
-#define INVERTED_NEUTRAL_PITCH	 			8.0
+#define INVERTED_NEUTRAL_PITCH	 			0.0		//8.0 0.0 for VFO
 
 // Rudder/Yaw Control Gains
 // YAWKP_RUDDER is the proportional feedback gain for rudder navigation
@@ -455,9 +455,9 @@
 // MANUAL_AILERON_RUDDER_MIX is the fraction of manual aileron control to mix into the rudder when
 // in stabilized or waypoint mode.  This mainly helps aileron-initiated turning while in stabilized.
 // RUDDER_BOOST is the additional gain multiplier for the manually commanded rudder deflection
-#define YAWKP_RUDDER						1.0		//0.05
-#define YAWKD_RUDDER						0.5		//0.05
-#define ROLLKP_RUDDER						0.0		//0.06 0.0 for VTOL
+#define YAWKP_RUDDER						0.05
+#define YAWKD_RUDDER						0.05
+#define ROLLKP_RUDDER						0.06 	//0.06 0.0 for VTOL
 #define ROLLKD_RUDDER						0.0		//0.05 0.0 for VTOL
 #define MANUAL_AILERON_RUDDER_MIX			0.00	//0.0 for VTOL
 #define RUDDER_BOOST						1.00
@@ -475,13 +475,13 @@
 // HOVER_PITCH_TOWARDS_WP is the max angle in degrees to pitch the nose down towards the WP while navigating
 // HOVER_NAV_MAX_PITCH_RADIUS is the radius around a waypoint in meters, within which the HOVER_PITCH_TOWARDS_WP
 //                            value is proportionally scaled down.
-#define HOVER_ROLLKP						1.0		//0.05
-#define HOVER_ROLLKD						0.5	    //0.05
-#define HOVER_PITCHGAIN						1.0		//0.2 ***TODO Why is this not HOVER_PITCHKP?
-#define HOVER_PITCHKD						0.5 	// ***TODO Need more refined PID tuning for VFO
+#define HOVER_ROLLKP						1.0		//1.0 0.05
+#define HOVER_ROLLKD						0.5		//0.5 0.05
+#define HOVER_PITCHGAIN						1.0		//1.0 0.2 ***TODO Why is this not HOVER_PITCHKP?
+#define HOVER_PITCHKD						0.5 	//0.5 ***TODO Need more refined PID tuning for VFO
 #define HOVER_PITCH_OFFSET					0.0		// + leans towards top, - leans towards bottom
-#define HOVER_YAWKP							1.0		//0.2
-#define HOVER_YAWKD							0.5 	//0.25
+#define HOVER_YAWKP							1.0		//1.0 0.2
+#define HOVER_YAWKD							0.5	 	//0.5 0.25
 #define HOVER_YAW_OFFSET					0.0		// ***TODO Test non zero values for control mixing for VTOL
 #define HOVER_PITCH_TOWARDS_WP			   	0.0		//30.0 ***TODO Test for VTOL with nav mode
 #define HOVER_NAV_MAX_PITCH_RADIUS		   	20
